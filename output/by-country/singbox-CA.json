@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇦 加拿大 (Canada) 01 - ra",
+        "🇨🇦 加拿大 (Canada) 02 - ra",
+        "🇨🇦 加拿大 (Canada) 03 - ra",
+        "🇨🇦 加拿大 (Canada) 04 - ra",
+        "🇨🇦 加拿大 (Canada) 05 - ra",
+        "🇨🇦 加拿大 (Canada) 06 - ra",
+        "🇨🇦 加拿大 (Canada) 07 - ra",
+        "🇨🇦 加拿大 (Canada) 08 - ra",
+        "🇨🇦 加拿大 (Canada) 09 - ra",
+        "🇨🇦 加拿大 (Canada) 10 - ra",
+        "🇨🇦 加拿大 (Canada) 11 - ra",
+        "🇨🇦 加拿大 (Canada) 12 - ra",
+        "🇨🇦 加拿大 (Canada) 13 - ra",
+        "🇨🇦 加拿大 (Canada) 14 - ra",
+        "🇨🇦 加拿大 (Canada) 15 - ra",
+        "🇨🇦 加拿大 (Canada) 16 - ra",
+        "🇨🇦 加拿大 (Canada) 17 - ra",
+        "🇨🇦 加拿大 (Canada) 18 - ra",
+        "🇨🇦 加拿大 (Canada) 19 - ra",
+        "🇨🇦 加拿大 (Canada) 20 - ra",
+        "🇨🇦 加拿大 (Canada) 21 - ra",
+        "🇨🇦 加拿大 (Canada) 22 - ra",
+        "🇨🇦 加拿大 (Canada) 23 - ra",
+        "🇨🇦 加拿大 (Canada) 24 - ra",
+        "🇨🇦 加拿大 (Canada) 25 - ra",
+        "🇨🇦 加拿大 (Canada) 26 - ra",
+        "🇨🇦 加拿大 (Canada) 27 - ra",
+        "🇨🇦 加拿大 (Canada) 28 - ra",
+        "🇨🇦 加拿大 (Canada) 29 - ra",
+        "🇨🇦 加拿大 (Canada) 30 - ra"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇦 加拿大 (Canada) 01 - ra",
+        "🇨🇦 加拿大 (Canada) 02 - ra",
+        "🇨🇦 加拿大 (Canada) 03 - ra",
+        "🇨🇦 加拿大 (Canada) 04 - ra",
+        "🇨🇦 加拿大 (Canada) 05 - ra",
+        "🇨🇦 加拿大 (Canada) 06 - ra",
+        "🇨🇦 加拿大 (Canada) 07 - ra",
+        "🇨🇦 加拿大 (Canada) 08 - ra",
+        "🇨🇦 加拿大 (Canada) 09 - ra",
+        "🇨🇦 加拿大 (Canada) 10 - ra",
+        "🇨🇦 加拿大 (Canada) 11 - ra",
+        "🇨🇦 加拿大 (Canada) 12 - ra",
+        "🇨🇦 加拿大 (Canada) 13 - ra",
+        "🇨🇦 加拿大 (Canada) 14 - ra",
+        "🇨🇦 加拿大 (Canada) 15 - ra",
+        "🇨🇦 加拿大 (Canada) 16 - ra",
+        "🇨🇦 加拿大 (Canada) 17 - ra",
+        "🇨🇦 加拿大 (Canada) 18 - ra",
+        "🇨🇦 加拿大 (Canada) 19 - ra",
+        "🇨🇦 加拿大 (Canada) 20 - ra",
+        "🇨🇦 加拿大 (Canada) 21 - ra",
+        "🇨🇦 加拿大 (Canada) 22 - ra",
+        "🇨🇦 加拿大 (Canada) 23 - ra",
+        "🇨🇦 加拿大 (Canada) 24 - ra",
+        "🇨🇦 加拿大 (Canada) 25 - ra",
+        "🇨🇦 加拿大 (Canada) 26 - ra",
+        "🇨🇦 加拿大 (Canada) 27 - ra",
+        "🇨🇦 加拿大 (Canada) 28 - ra",
+        "🇨🇦 加拿大 (Canada) 29 - ra",
+        "🇨🇦 加拿大 (Canada) 30 - ra"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

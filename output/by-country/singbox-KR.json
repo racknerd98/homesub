@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇷 韩国 (South Korea) 01 - ra",
+        "🇰🇷 韩国 (South Korea) 02 - ra",
+        "🇰🇷 韩国 (South Korea) 03 - ra",
+        "🇰🇷 韩国 (South Korea) 04 - ra",
+        "🇰🇷 韩国 (South Korea) 05 - ra",
+        "🇰🇷 韩国 (South Korea) 06 - ra",
+        "🇰🇷 韩国 (South Korea) 07 - ra",
+        "🇰🇷 韩国 (South Korea) 08 - ra",
+        "🇰🇷 韩国 (South Korea) 09 - ra"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇷 韩国 (South Korea) 01 - ra",
+        "🇰🇷 韩国 (South Korea) 02 - ra",
+        "🇰🇷 韩国 (South Korea) 03 - ra",
+        "🇰🇷 韩国 (South Korea) 04 - ra",
+        "🇰🇷 韩国 (South Korea) 05 - ra",
+        "🇰🇷 韩国 (South Korea) 06 - ra",
+        "🇰🇷 韩国 (South Korea) 07 - ra",
+        "🇰🇷 韩国 (South Korea) 08 - ra",
+        "🇰🇷 韩国 (South Korea) 09 - ra"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

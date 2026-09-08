@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇿🇦 ZA 01 - ra",
+        "🇿🇦 ZA 02 - ra",
+        "🇿🇦 ZA 03 - ra",
+        "🇿🇦 ZA 04 - ra",
+        "🇿🇦 ZA 05 - ra"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇿🇦 ZA 01 - ra",
+        "🇿🇦 ZA 02 - ra",
+        "🇿🇦 ZA 03 - ra",
+        "🇿🇦 ZA 04 - ra",
+        "🇿🇦 ZA 05 - ra"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

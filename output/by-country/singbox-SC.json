@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇸🇨 SC 01 - ra",
+        "🇸🇨 SC 02 - ra",
+        "🇸🇨 SC 03 - ra",
+        "🇸🇨 SC 04 - ra",
+        "🇸🇨 SC 05 - ra",
+        "🇸🇨 SC 06 - ra",
+        "🇸🇨 SC 07 - ra",
+        "🇸🇨 SC 08 - ra",
+        "🇸🇨 SC 09 - ra",
+        "🇸🇨 SC 10 - ra",
+        "🇸🇨 SC 11 - ra",
+        "🇸🇨 SC 12 - ra",
+        "🇸🇨 SC 13 - ra",
+        "🇸🇨 SC 14 - ra",
+        "🇸🇨 SC 15 - ra",
+        "🇸🇨 SC 16 - ra",
+        "🇸🇨 SC 17 - ra",
+        "🇸🇨 SC 18 - ra",
+        "🇸🇨 SC 19 - ra",
+        "🇸🇨 SC 20 - ra"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇸🇨 SC 01 - ra",
+        "🇸🇨 SC 02 - ra",
+        "🇸🇨 SC 03 - ra",
+        "🇸🇨 SC 04 - ra",
+        "🇸🇨 SC 05 - ra",
+        "🇸🇨 SC 06 - ra",
+        "🇸🇨 SC 07 - ra",
+        "🇸🇨 SC 08 - ra",
+        "🇸🇨 SC 09 - ra",
+        "🇸🇨 SC 10 - ra",
+        "🇸🇨 SC 11 - ra",
+        "🇸🇨 SC 12 - ra",
+        "🇸🇨 SC 13 - ra",
+        "🇸🇨 SC 14 - ra",
+        "🇸🇨 SC 15 - ra",
+        "🇸🇨 SC 16 - ra",
+        "🇸🇨 SC 17 - ra",
+        "🇸🇨 SC 18 - ra",
+        "🇸🇨 SC 19 - ra",
+        "🇸🇨 SC 20 - ra"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

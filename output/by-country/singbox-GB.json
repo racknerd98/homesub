@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇬🇧 英国 (United Kingdom) 01 - ra",
+        "🇬🇧 英国 (United Kingdom) 02 - ra",
+        "🇬🇧 英国 (United Kingdom) 03 - ra",
+        "🇬🇧 英国 (United Kingdom) 04 - ra",
+        "🇬🇧 英国 (United Kingdom) 05 - ra",
+        "🇬🇧 英国 (United Kingdom) 06 - ra",
+        "🇬🇧 英国 (United Kingdom) 07 - ra",
+        "🇬🇧 英国 (United Kingdom) 08 - ra",
+        "🇬🇧 英国 (United Kingdom) 09 - ra",
+        "🇬🇧 英国 (United Kingdom) 10 - ra",
+        "🇬🇧 英国 (United Kingdom) 11 - ra",
+        "🇬🇧 英国 (United Kingdom) 12 - ra",
+        "🇬🇧 英国 (United Kingdom) 13 - ra",
+        "🇬🇧 英国 (United Kingdom) 14 - ra",
+        "🇬🇧 英国 (United Kingdom) 15 - ra",
+        "🇬🇧 英国 (United Kingdom) 16 - ra",
+        "🇬🇧 英国 (United Kingdom) 17 - ra",
+        "🇬🇧 英国 (United Kingdom) 18 - ra",
+        "🇬🇧 英国 (United Kingdom) 19 - ra",
+        "🇬🇧 英国 (United Kingdom) 20 - ra",
+        "🇬🇧 英国 (United Kingdom) 21 - ra",
+        "🇬🇧 英国 (United Kingdom) 22 - ra",
+        "🇬🇧 英国 (United Kingdom) 23 - ra",
+        "🇬🇧 英国 (United Kingdom) 24 - ra"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇬🇧 英国 (United Kingdom) 01 - ra",
+        "🇬🇧 英国 (United Kingdom) 02 - ra",
+        "🇬🇧 英国 (United Kingdom) 03 - ra",
+        "🇬🇧 英国 (United Kingdom) 04 - ra",
+        "🇬🇧 英国 (United Kingdom) 05 - ra",
+        "🇬🇧 英国 (United Kingdom) 06 - ra",
+        "🇬🇧 英国 (United Kingdom) 07 - ra",
+        "🇬🇧 英国 (United Kingdom) 08 - ra",
+        "🇬🇧 英国 (United Kingdom) 09 - ra",
+        "🇬🇧 英国 (United Kingdom) 10 - ra",
+        "🇬🇧 英国 (United Kingdom) 11 - ra",
+        "🇬🇧 英国 (United Kingdom) 12 - ra",
+        "🇬🇧 英国 (United Kingdom) 13 - ra",
+        "🇬🇧 英国 (United Kingdom) 14 - ra",
+        "🇬🇧 英国 (United Kingdom) 15 - ra",
+        "🇬🇧 英国 (United Kingdom) 16 - ra",
+        "🇬🇧 英国 (United Kingdom) 17 - ra",
+        "🇬🇧 英国 (United Kingdom) 18 - ra",
+        "🇬🇧 英国 (United Kingdom) 19 - ra",
+        "🇬🇧 英国 (United Kingdom) 20 - ra",
+        "🇬🇧 英国 (United Kingdom) 21 - ra",
+        "🇬🇧 英国 (United Kingdom) 22 - ra",
+        "🇬🇧 英国 (United Kingdom) 23 - ra",
+        "🇬🇧 英国 (United Kingdom) 24 - ra"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

@@ -7,7 +7,11 @@
       "outbounds": [
         "auto",
         "🇰🇿 KZ 01 - ra",
-        "🇰🇿 KZ 02 - ra"
+        "🇰🇿 KZ 02 - ra",
+        "🇰🇿 KZ 03 - ra",
+        "🇰🇿 KZ 04 - ra",
+        "🇰🇿 KZ 05 - ra",
+        "🇰🇿 KZ 06 - ra"
       ]
     },
     {
@@ -15,7 +19,11 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇿 KZ 01 - ra",
-        "🇰🇿 KZ 02 - ra"
+        "🇰🇿 KZ 02 - ra",
+        "🇰🇿 KZ 03 - ra",
+        "🇰🇿 KZ 04 - ra",
+        "🇰🇿 KZ 05 - ra",
+        "🇰🇿 KZ 06 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

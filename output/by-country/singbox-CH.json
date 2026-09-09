@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - ra"
+        "🇨🇭 CH 01 - ra",
+        "🇨🇭 CH 02 - ra",
+        "🇨🇭 CH 03 - ra"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - ra"
+        "🇨🇭 CH 01 - ra",
+        "🇨🇭 CH 02 - ra",
+        "🇨🇭 CH 03 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

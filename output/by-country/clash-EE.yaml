@@ -6,13 +6,17 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - ra
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 66.235.200.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime47.workers.dev
 - name: 🇪🇪 EE 02 - ra
   type: vless
   server: 94.183.170.135
@@ -29,15 +33,6 @@ proxies:
 - name: 🇪🇪 EE 03 - ra
   type: vless
   server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 04 - ra
-  type: vless
-  server: 94.183.170.135
   port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
@@ -48,6 +43,24 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
+- name: 🇪🇪 EE 04 - ra
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 05 - ra
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,6 +70,7 @@ proxy-groups:
   - 🇪🇪 EE 02 - ra
   - 🇪🇪 EE 03 - ra
   - 🇪🇪 EE 04 - ra
+  - 🇪🇪 EE 05 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -66,5 +80,6 @@ proxy-groups:
   - 🇪🇪 EE 02 - ra
   - 🇪🇪 EE 03 - ra
   - 🇪🇪 EE 04 - ra
+  - 🇪🇪 EE 05 - ra
 rules:
 - MATCH,PROXIES

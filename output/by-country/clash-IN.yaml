@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - ra
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 02 - ra
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -15,8 +30,27 @@ proxies:
   reality-opts:
     public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 02 - ra
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 03 - ra
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 04 - ra
+  type: ss
+  server: 172.105.39.124
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇮🇳 印度 (India) 05 - ra
   type: vless
   server: 104.21.69.118
   port: 443
@@ -30,48 +64,6 @@ proxies:
     path: /sync
     headers:
       Host: odd-violet-5440.asdgrweeee13.workers.dev
-- name: 🇮🇳 印度 (India) 03 - ra
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 04 - ra
-  type: vless
-  server: 4.240.110.47
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇮🇳 印度 (India) 05 - ra
-  type: vmess
-  server: 20.235.220.189
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
 - name: 🇮🇳 印度 (India) 06 - ra
   type: vless
   server: 194.61.31.126
@@ -83,33 +75,21 @@ proxies:
   reality-opts:
     public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 07 - ra
   type: vless
-  server: 172.67.208.1
+  server: cfd.url0.top
   port: 443
-  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: odd-violet-5440.asdgrweeee13.workers.dev
+  servername: in.520782.xyz
   network: ws
   ws-opts:
-    path: /sync
+    path: /cdn/packages/runtime-core.tar.gz
     headers:
-      Host: odd-violet-5440.asdgrweeee13.workers.dev
-- name: 🇮🇳 印度 (India) 08 - ra
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-  servername: www.apple.com
-  client-fingerprint: random
+      Host: in.520782.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -122,7 +102,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 05 - ra
   - 🇮🇳 印度 (India) 06 - ra
   - 🇮🇳 印度 (India) 07 - ra
-  - 🇮🇳 印度 (India) 08 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -135,6 +114,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 05 - ra
   - 🇮🇳 印度 (India) 06 - ra
   - 🇮🇳 印度 (India) 07 - ra
-  - 🇮🇳 印度 (India) 08 - ra
 rules:
 - MATCH,PROXIES

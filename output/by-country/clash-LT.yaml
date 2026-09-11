@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇭 PH 01 - ra
+- name: 🇱🇹 LT 01 - ra
   type: vless
-  server: 149.104.109.17
-  port: 2087
-  uuid: 9ed3dcb3-b71a-4ae1-8210-95e33615d7e6
+  server: 88.216.66.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /04461917b179
+    path: /
     headers:
-      Host: 149.104.109.17
+      Host: vms.lifetime04.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇭 PH 01 - ra
+  - 🇱🇹 LT 01 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇭 PH 01 - ra
+  - 🇱🇹 LT 01 - ra
 rules:
 - MATCH,PROXIES

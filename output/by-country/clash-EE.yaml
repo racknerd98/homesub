@@ -6,43 +6,41 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - ra
   type: vless
-  server: 66.235.200.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 45.80.108.236
+  port: 443
+  uuid: ef9d2063-0140-472b-8b17-ba02ba4b4435
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lively-resonance-4e12.electrocellco-cf-059.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip
     headers:
-      Host: vms.lifetime47.workers.dev
+      Host: lively-resonance-4e12.electrocellco-cf-059.workers.dev
 - name: 🇪🇪 EE 02 - ra
   type: vless
-  server: 94.183.170.135
+  server: 104.24.30.89
   port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560
     headers:
-      Host: 94.183.170.135
+      Host: rayan-007.nastaran.dpdns.org
 - name: 🇪🇪 EE 03 - ra
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 04 - ra
   type: vless
   server: 94.183.170.135
@@ -54,13 +52,31 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 05 - ra
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 45.80.108.236
+  port: 443
+  uuid: ef9d2063-0140-472b-8b17-ba02ba4b4435
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: lively-resonance-4e12.electrocellco-cf-059.workers.dev
+  network: ws
+  ws-opts:
+    path: /proxyip
+    headers:
+      Host: lively-resonance-4e12.electrocellco-cf-059.workers.dev
+- name: 🇪🇪 EE 06 - ra
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,6 +87,7 @@ proxy-groups:
   - 🇪🇪 EE 03 - ra
   - 🇪🇪 EE 04 - ra
   - 🇪🇪 EE 05 - ra
+  - 🇪🇪 EE 06 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,5 +98,6 @@ proxy-groups:
   - 🇪🇪 EE 03 - ra
   - 🇪🇪 EE 04 - ra
   - 🇪🇪 EE 05 - ra
+  - 🇪🇪 EE 06 - ra
 rules:
 - MATCH,PROXIES

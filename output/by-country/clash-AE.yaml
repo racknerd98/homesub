@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - ra
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -18,39 +18,6 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - ra
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 03 - ra
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 04 - ra
-  type: ss
-  server: 188.208.110.58
-  port: 8444
-  cipher: chacha20-ietf-poly1305
-  password: tunnel-astrovpn_official
-  udp: true
-- name: 🇦🇪 阿联酋 (UAE) 05 - ra
   type: vless
   server: 104.17.147.22
   port: 443
@@ -64,23 +31,9 @@ proxies:
     path: /lunetnetwork
     headers:
       Host: relay.lunetcloud.ir
-- name: 🇦🇪 阿联酋 (UAE) 06 - ra
+- name: 🇦🇪 阿联酋 (UAE) 03 - ra
   type: vless
-  server: 104.17.169.13
-  port: 2053
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: inDeX.HaRMONiCA01.WORkers.DeV
-  network: ws
-  ws-opts:
-    path: /axch1mttbxz2k55y01
-    headers:
-      Host: inDeX.HaRMONiCA01.WORkers.DeV
-- name: 🇦🇪 阿联酋 (UAE) 07 - ra
-  type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -91,7 +44,20 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - ra
+- name: 🇦🇪 阿联酋 (UAE) 04 - ra
+  type: vless
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 05 - ra
   type: vless
   server: 185.112.249.201
   port: 8443
@@ -105,74 +71,6 @@ proxies:
     path: /proxyip=bpb.yousef.isegaro.comfp=chrome
     headers:
       Host: web-socket.tgdaosheng.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 09 - ra
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 10 - ra
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 11 - ra
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: 9c7501fb-4e23-44d8-9a9e-973807ae4f35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 12 - ra
-  type: vless
-  server: 128.241.25.215
-  port: 30036
-  uuid: 87e7d0b2-faf6-4644-97ae-ad9bffca2c97
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 13 - ra
-  type: vless
-  server: 79.137.199.52
-  port: 21
-  uuid: f346f223-ebf6-4da3-955e-425de7e9c372
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -183,14 +81,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - ra
   - 🇦🇪 阿联酋 (UAE) 04 - ra
   - 🇦🇪 阿联酋 (UAE) 05 - ra
-  - 🇦🇪 阿联酋 (UAE) 06 - ra
-  - 🇦🇪 阿联酋 (UAE) 07 - ra
-  - 🇦🇪 阿联酋 (UAE) 08 - ra
-  - 🇦🇪 阿联酋 (UAE) 09 - ra
-  - 🇦🇪 阿联酋 (UAE) 10 - ra
-  - 🇦🇪 阿联酋 (UAE) 11 - ra
-  - 🇦🇪 阿联酋 (UAE) 12 - ra
-  - 🇦🇪 阿联酋 (UAE) 13 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -201,13 +91,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - ra
   - 🇦🇪 阿联酋 (UAE) 04 - ra
   - 🇦🇪 阿联酋 (UAE) 05 - ra
-  - 🇦🇪 阿联酋 (UAE) 06 - ra
-  - 🇦🇪 阿联酋 (UAE) 07 - ra
-  - 🇦🇪 阿联酋 (UAE) 08 - ra
-  - 🇦🇪 阿联酋 (UAE) 09 - ra
-  - 🇦🇪 阿联酋 (UAE) 10 - ra
-  - 🇦🇪 阿联酋 (UAE) 11 - ra
-  - 🇦🇪 阿联酋 (UAE) 12 - ra
-  - 🇦🇪 阿联酋 (UAE) 13 - ra
 rules:
 - MATCH,PROXIES

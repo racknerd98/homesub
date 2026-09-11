@@ -16,33 +16,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇨 SC 02 - ra
   type: vless
-  server: 172.66.44.124
-  port: 8443
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-- name: 🇸🇨 SC 03 - ra
-  type: vless
-  server: www.speedtest.net
-  port: 80
-  uuid: 63f1ef69-92fd-427a-b3e4-98ffddf81ac6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /nPKoVRUdyuRZ6jpY/YnBiLnlvdXNlZi5pc2VnYXJvLmNvbSxwcm94eWlwLmNtbGl1c3Nzcy5uZXQsbmltYS5uc2NsLmlyLHR1cmsucmFkaWNhbGl6YXRpb24uaXI=
-    headers:
-      Host: young-rice-749e.heliy78750.workers.dev
-- name: 🇸🇨 SC 04 - ra
-  type: vless
   server: 45.130.125.96
   port: 443
   uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
@@ -55,35 +28,7 @@ proxies:
     path: /id-pusat
     headers:
       Host: dfsuporte.garena.com.ex33r.eu.cc
-- name: 🇸🇨 SC 05 - ra
-  type: vless
-  server: 104.21.88.201
-  port: 443
-  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: app-q0zc4t.user-4gfyh5.workers.dev
-  network: ws
-  ws-opts:
-    path: /cmh
-    headers:
-      Host: app-q0zc4t.user-4gfyh5.workers.dev
-- name: 🇸🇨 SC 06 - ra
-  type: vless
-  server: 172.67.131.112
-  port: 443
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 🇸🇨 SC 07 - ra
+- name: 🇸🇨 SC 03 - ra
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -93,6 +38,20 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇨 SC 04 - ra
+  type: vless
+  server: 188.114.96.7
+  port: 8443
+  uuid: 362a79a2-ce89-8d2d-355c-f1f5071a445f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fragrant-unit-d662.mmammatrix770088.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: fragrant-unit-d662.mmammatrix770088.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -102,9 +61,6 @@ proxy-groups:
   - 🇸🇨 SC 02 - ra
   - 🇸🇨 SC 03 - ra
   - 🇸🇨 SC 04 - ra
-  - 🇸🇨 SC 05 - ra
-  - 🇸🇨 SC 06 - ra
-  - 🇸🇨 SC 07 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -114,8 +70,5 @@ proxy-groups:
   - 🇸🇨 SC 02 - ra
   - 🇸🇨 SC 03 - ra
   - 🇸🇨 SC 04 - ra
-  - 🇸🇨 SC 05 - ra
-  - 🇸🇨 SC 06 - ra
-  - 🇸🇨 SC 07 - ra
 rules:
 - MATCH,PROXIES

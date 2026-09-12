@@ -19,7 +19,7 @@ proxies:
       Host: netlivpn2950.bbxff.workers.dev
 - name: 🇨🇭 CH 02 - ra
   type: vless
-  server: 162.159.152.4
+  server: 162.159.153.4
   port: 443
   uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true

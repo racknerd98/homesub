@@ -4,25 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇴 CO 01 - ra
+- name: 🇱🇻 LV 01 - ra
   type: vless
-  server: 157.137.209.135
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  server: uycneynsieuocxniseunciusecmsepiock.novexgroup.ir
+  port: 2096
+  uuid: 1a67126c-b9c4-4e78-b96e-eabd4002ab0c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: uycneynsieuocxniseunciusecmsepiock.novexgroup.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇴 CO 01 - ra
+  - 🇱🇻 LV 01 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 CO 01 - ra
+  - 🇱🇻 LV 01 - ra
 rules:
 - MATCH,PROXIES

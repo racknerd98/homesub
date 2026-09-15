@@ -5,20 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - ra
-  type: vless
-  server: 188.132.237.20
-  port: 2095
-  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 02 - ra
   type: ss
   server: 65.109.215.118
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
   udp: true
+- name: 🇫🇮 FI 02 - ra
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: bdaf42dd-f75b-4594-d5f8-51c0feeb8406
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 - name: 🇫🇮 FI 03 - ra
   type: vless
   server: 185.79.138.71

@@ -6,29 +6,45 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - ra
   type: vless
-  server: 104.21.34.106
+  server: 162.159.153.4
   port: 443
-  uuid: d8c14c5c-a80a-4f6f-a5fb-52071849c443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: CgxGqchEiAMnA-jkS01FiDlsnqOjwF-S.ALIAmA.WOrKErS.DeV
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiZTFWRGJFS0NUd2F2NkRmIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
+    path: /?ed=2560
     headers:
-      Host: cgxgqcheiamna-jks01fidlsnqojwf-s.aliama.workers.dev
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+- name: 🇨🇿 CZ 02 - ra
+  type: vless
+  server: 188.130.207.30
+  port: 2053
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /m?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - ra
+  - 🇨🇿 CZ 02 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - ra
+  - 🇨🇿 CZ 02 - ra
 rules:
 - MATCH,PROXIES

@@ -6,38 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 CY 01 - ra",
-        "🇨🇾 CY 02 - ra",
-        "🇨🇾 CY 03 - ra",
-        "🇨🇾 CY 04 - ra",
-        "🇨🇾 CY 05 - ra",
-        "🇨🇾 CY 06 - ra",
-        "🇨🇾 CY 07 - ra",
-        "🇨🇾 CY 08 - ra",
-        "🇨🇾 CY 09 - ra",
-        "🇨🇾 CY 10 - ra",
-        "🇨🇾 CY 11 - ra",
-        "🇨🇾 CY 12 - ra",
-        "🇨🇾 CY 13 - ra"
+        "🇨🇾 CY 01 - ra"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY 01 - ra",
-        "🇨🇾 CY 02 - ra",
-        "🇨🇾 CY 03 - ra",
-        "🇨🇾 CY 04 - ra",
-        "🇨🇾 CY 05 - ra",
-        "🇨🇾 CY 06 - ra",
-        "🇨🇾 CY 07 - ra",
-        "🇨🇾 CY 08 - ra",
-        "🇨🇾 CY 09 - ra",
-        "🇨🇾 CY 10 - ra",
-        "🇨🇾 CY 11 - ra",
-        "🇨🇾 CY 12 - ra",
-        "🇨🇾 CY 13 - ra"
+        "🇨🇾 CY 01 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

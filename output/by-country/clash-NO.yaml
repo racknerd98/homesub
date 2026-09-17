@@ -11,56 +11,17 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   udp: true
-- name: 🇳🇴 NO 02 - ra
-  type: vless
-  server: aldebaran.yokkastars.com
-  port: 40443
-  uuid: ed91e79c-f6bf-4fba-8cc0-6d45acaec22b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇳🇴 NO 03 - ra
-  type: vless
-  server: 185.125.171.128
-  port: 8443
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kkkk-xcd.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: kkkk-xcd.pages.dev
-- name: 🇳🇴 NO 04 - ra
-  type: ss
-  server: 185.213.23.63
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇳🇴 NO 01 - ra
-  - 🇳🇴 NO 02 - ra
-  - 🇳🇴 NO 03 - ra
-  - 🇳🇴 NO 04 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇳🇴 NO 01 - ra
-  - 🇳🇴 NO 02 - ra
-  - 🇳🇴 NO 03 - ra
-  - 🇳🇴 NO 04 - ra
 rules:
 - MATCH,PROXIES

@@ -5,220 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - ra
-  type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 02 - ra
   type: ss
-  server: 158.173.221.214
-  port: 11001
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 03 - ra
-  type: vless
-  server: 104.21.79.199
-  port: 443
-  uuid: 38d6b629-64c2-4c31-a10d-26eb3a2a053d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lHNs3ww2-CXQ-Gj1vvOBkEPIg4noPkc.hqu4v38Hi9iFtcp6mZfMX-3bmx.WoRKeRS.dEV
-  network: ws
-  ws-opts:
-    path: /vl/cxl8Wn1ylnsk63nJ0
-    headers:
-      Host: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 04 - ra
-  type: ss
-  server: 149.102.149.207
-  port: 80
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 05 - ra
-  type: ss
-  server: 149.102.149.207
-  port: 443
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 06 - ra
-  type: vless
-  server: 172.67.155.231
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 07 - ra
-  type: ss
-  server: 134.65.63.79
+  server: 129.151.92.18
   port: 61312
   cipher: 2022-blake3-chacha20-poly1305
-  password: Jzj07HQI64SzM0hsx0pGCWTw+v9KY0G1IrOh/BXdPpc=
+  password: 4YIk2BAV2AExvYDsQrw4ELlQJP/b4poEXjzFbSXwMao=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 08 - ra
-  type: ss
-  server: 149.102.132.184
-  port: 443
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 09 - ra
-  type: vless
-  server: 91.193.58.141
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 10 - ra
-  type: vless
-  server: 186.190.211.188
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 186.190.211.188
-- name: 🇬🇧 英国 (United Kingdom) 11 - ra
-  type: ss
-  server: 149.102.132.184
-  port: 80
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 12 - ra
-  type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 🇬🇧 英国 (United Kingdom) 13 - ra
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 14 - ra
-  type: vless
-  server: 185.193.29.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇬🇧 英国 (United Kingdom) 15 - ra
-  type: vless
-  server: 91.193.58.217
-  port: 2053
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlso200.1d.mom
-  network: ws
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080
-    headers:
-      Host: vlso200.1d.mom
-- name: 🇬🇧 英国 (United Kingdom) 16 - ra
-  type: vless
-  server: 188.114.96.8
-  port: 443
-  uuid: 513beae3-56e7-4954-a17e-930e06237b27
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: Cfoi-2FX16G3-8Ry2KdXmCJ.WjESV2ILa3rxBUHpc2NsUGRaChgaWk.WOrkeRS.dev
-  network: ws
-  ws-opts:
-    path: /vl/piIRdE9WUi24Sn3bb2oSJ?ed=2560
-    headers:
-      Host: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 17 - ra
-  type: vless
-  server: 186.190.211.188
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 186.190.211.188
-- name: 🇬🇧 英国 (United Kingdom) 18 - ra
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 19 - ra
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 20 - ra
-  type: vless
-  server: 91.193.58.195
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 21 - ra
+- name: 🇬🇧 英国 (United Kingdom) 02 - ra
   type: vmess
   server: 57.129.132.223
   port: 80
@@ -233,7 +26,21 @@ proxies:
     path: /vmess/
     headers:
       Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 22 - ra
+- name: 🇬🇧 英国 (United Kingdom) 03 - ra
+  type: vless
+  server: 91.193.59.191
+  port: 2087
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vlso5.1d.mom
+  network: ws
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080
+    headers:
+      Host: vlso5.1d.mom
+- name: 🇬🇧 英国 (United Kingdom) 04 - ra
   type: vless
   server: 46.250.250.149
   port: 2053
@@ -245,68 +52,65 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 23 - ra
-  type: vless
-  server: 129.121.95.159
-  port: 443
-  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 129.121.95.159
-  network: ws
-  ws-opts:
-    path: /connect
-    headers:
-      Host: 129.121.95.159
-- name: 🇬🇧 英国 (United Kingdom) 24 - ra
+- name: 🇬🇧 英国 (United Kingdom) 05 - ra
   type: ss
   server: 141.98.101.181
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 25 - ra
+- name: 🇬🇧 英国 (United Kingdom) 06 - ra
   type: ss
-  server: 149.102.149.207
+  server: 129.151.74.18
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: aCeLrNSmYv7M5d0iQTHHhbKVY6Gymx+Tl40NWmuBpEI=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 07 - ra
+  type: vless
+  server: 185.193.28.123
+  port: 443
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: notls.lukongtou.eu.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇬🇧 英国 (United Kingdom) 08 - ra
+  type: vless
+  server: 109.176.239.123
+  port: 443
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: notls.lukongtou.eu.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇬🇧 英国 (United Kingdom) 09 - ra
+  type: ss
+  server: 149.102.132.184
   port: 443
   cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
+  password: g5h5jleTRSyO3Rk4
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 26 - ra
+- name: 🇬🇧 英国 (United Kingdom) 10 - ra
   type: ss
-  server: 129.151.91.115
+  server: 134.65.61.47
   port: 61312
   cipher: 2022-blake3-chacha20-poly1305
-  password: ktsunSg4AnlcqH3JiVv7JWSHpbDjDfTvldDgDpApNHw=
+  password: sDhEhHHvZ8tSUziGGDt1rQuh7bgTpUccfw5JnGsAvB4=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 27 - ra
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 28 - ra
-  type: ss
-  server: 134.65.61.31
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 56rd6sxghyMun+TJalHZVSJtzjFYPDEBhn6dUXJ4IVg=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 29 - ra
-  type: ss
-  server: 134.65.58.241
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: tvpBo/Hcvix3GwQ1duILnBX2njevG6/K/mhs9ow4vuI=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 30 - ra
+- name: 🇬🇧 英国 (United Kingdom) 11 - ra
   type: vless
-  server: 91.193.58.93
+  server: 91.193.58.141
   port: 443
   uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
@@ -318,14 +122,40 @@ proxies:
     path: Telegram-WangCai2🇨🇳
     headers:
       Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 31 - ra
+- name: 🇬🇧 英国 (United Kingdom) 12 - ra
+  type: vless
+  server: 91.193.58.195
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 13 - ra
   type: ss
-  server: 129.151.77.196
+  server: 129.151.91.115
   port: 61312
   cipher: 2022-blake3-chacha20-poly1305
-  password: ogzqyljZNyMjc7OF7aDzKaQO21eW9jaLK3b7wdot4hk=
+  password: ktsunSg4AnlcqH3JiVv7JWSHpbDjDfTvldDgDpApNHw=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 32 - ra
+- name: 🇬🇧 英国 (United Kingdom) 14 - ra
+  type: vless
+  server: 46.250.250.149
+  port: 2053
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 15 - ra
   type: vless
   server: 91.193.58.117
   port: 443
@@ -339,14 +169,28 @@ proxies:
     path: Telegram-WangCai2🇨🇳
     headers:
       Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 33 - ra
-  type: ss
-  server: 51.38.71.51
-  port: 2083
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
+- name: 🇬🇧 英国 (United Kingdom) 16 - ra
+  type: vless
+  server: 129.121.95.159
+  port: 443
+  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 34 - ra
+  tls: true
+  skip-cert-verify: true
+  servername: 129.121.95.159
+  network: ws
+  ws-opts:
+    path: /connect#TELEGRAM-MUSICLOVERS85?ed=512
+    headers:
+      Host: 129.121.95.159
+- name: 🇬🇧 英国 (United Kingdom) 17 - ra
+  type: ss
+  server: 144.24.225.111
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: xtHPuZw32Ek7q4odOVXoMn+UY9C/IdokDkolQjvdxrk=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 18 - ra
   type: vless
   server: 162.159.153.4
   port: 443
@@ -360,27 +204,77 @@ proxies:
     path: /
     headers:
       Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 🇬🇧 英国 (United Kingdom) 35 - ra
+- name: 🇬🇧 英国 (United Kingdom) 19 - ra
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 20 - ra
   type: vless
-  server: 188.114.97.6
+  server: 185.193.29.123
   port: 443
-  uuid: 893096ae-ed76-4440-bc34-f77c4872540f
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: masterserver1-vsh.kalleh.workers.dev
+  servername: notls.lukongtou.eu.org
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoieE1zSFhYR2hkcHZGUHI3cSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: Telegram-WangCai2🇨🇳
     headers:
-      Host: masterserver1-vsh.kalleh.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 36 - ra
-  type: ss
-  server: 94.156.250.148
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+      Host: notls.lukongtou.eu.org
+- name: 🇬🇧 英国 (United Kingdom) 21 - ra
+  type: vless
+  server: 185.170.166.123
+  port: 443
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: notls.lukongtou.eu.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇬🇧 英国 (United Kingdom) 22 - ra
+  type: vless
+  server: 91.193.58.93
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 23 - ra
+  type: vless
+  server: 186.190.211.188
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 186.190.211.188
+- name: 🇬🇧 英国 (United Kingdom) 24 - ra
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -410,18 +304,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 22 - ra
   - 🇬🇧 英国 (United Kingdom) 23 - ra
   - 🇬🇧 英国 (United Kingdom) 24 - ra
-  - 🇬🇧 英国 (United Kingdom) 25 - ra
-  - 🇬🇧 英国 (United Kingdom) 26 - ra
-  - 🇬🇧 英国 (United Kingdom) 27 - ra
-  - 🇬🇧 英国 (United Kingdom) 28 - ra
-  - 🇬🇧 英国 (United Kingdom) 29 - ra
-  - 🇬🇧 英国 (United Kingdom) 30 - ra
-  - 🇬🇧 英国 (United Kingdom) 31 - ra
-  - 🇬🇧 英国 (United Kingdom) 32 - ra
-  - 🇬🇧 英国 (United Kingdom) 33 - ra
-  - 🇬🇧 英国 (United Kingdom) 34 - ra
-  - 🇬🇧 英国 (United Kingdom) 35 - ra
-  - 🇬🇧 英国 (United Kingdom) 36 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -451,17 +333,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 22 - ra
   - 🇬🇧 英国 (United Kingdom) 23 - ra
   - 🇬🇧 英国 (United Kingdom) 24 - ra
-  - 🇬🇧 英国 (United Kingdom) 25 - ra
-  - 🇬🇧 英国 (United Kingdom) 26 - ra
-  - 🇬🇧 英国 (United Kingdom) 27 - ra
-  - 🇬🇧 英国 (United Kingdom) 28 - ra
-  - 🇬🇧 英国 (United Kingdom) 29 - ra
-  - 🇬🇧 英国 (United Kingdom) 30 - ra
-  - 🇬🇧 英国 (United Kingdom) 31 - ra
-  - 🇬🇧 英国 (United Kingdom) 32 - ra
-  - 🇬🇧 英国 (United Kingdom) 33 - ra
-  - 🇬🇧 英国 (United Kingdom) 34 - ra
-  - 🇬🇧 英国 (United Kingdom) 35 - ra
-  - 🇬🇧 英国 (United Kingdom) 36 - ra
 rules:
 - MATCH,PROXIES

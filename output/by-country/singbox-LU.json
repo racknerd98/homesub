@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 AT 01 - ra"
+        "🇱🇺 LU 01 - ra"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 AT 01 - ra"
+        "🇱🇺 LU 01 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

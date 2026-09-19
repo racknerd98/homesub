@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇧🇪 BE 01 - ra",
+        "🇧🇪 BE 02 - ra",
+        "🇧🇪 BE 03 - ra",
+        "🇧🇪 BE 04 - ra"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇧🇪 BE 01 - ra",
+        "🇧🇪 BE 02 - ra",
+        "🇧🇪 BE 03 - ra",
+        "🇧🇪 BE 04 - ra"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

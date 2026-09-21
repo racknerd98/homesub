@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - ra
   type: vless
-  server: 154.211.8.123
+  server: 45.130.125.73
   port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  uuid: 50414e45-4c5f-5a45-5553-cea58e4acf49
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
+  servername: web-app-aug8yr.app-f1qsy1.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /api/ws
     headers:
-      Host: notls.lukongtou.eu.org
+      Host: web-app-aug8yr.app-f1qsy1.workers.dev
 - name: 🇸🇨 SC 02 - ra
   type: vless
-  server: 154.218.15.250
-  port: 2083
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  server: 2.27.244.164
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: proxy-1cu.pages.dev
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /channels/act
     headers:
-      Host: proxy-1cu.pages.dev
+      Host: cdn8848.776676.xyz
 - name: 🇸🇨 SC 03 - ra
   type: vless
   server: 154.197.75.40
@@ -47,32 +47,18 @@ proxies:
       Host: vms.lifetime37.workers.dev
 - name: 🇸🇨 SC 04 - ra
   type: vless
-  server: 154.211.8.227
-  port: 2087
+  server: 154.218.15.250
+  port: 2083
   uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: proxy-34l.pages.dev
+  servername: proxy-1cu.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: proxy-34l.pages.dev
-- name: 🇸🇨 SC 05 - ra
-  type: vless
-  server: 45.130.125.73
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-cea58e4acf49
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-app-aug8yr.app-f1qsy1.workers.dev
-  network: ws
-  ws-opts:
-    path: /api/ws
-    headers:
-      Host: web-app-aug8yr.app-f1qsy1.workers.dev
+      Host: proxy-1cu.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,7 +68,6 @@ proxy-groups:
   - 🇸🇨 SC 02 - ra
   - 🇸🇨 SC 03 - ra
   - 🇸🇨 SC 04 - ra
-  - 🇸🇨 SC 05 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,6 +77,5 @@ proxy-groups:
   - 🇸🇨 SC 02 - ra
   - 🇸🇨 SC 03 - ra
   - 🇸🇨 SC 04 - ra
-  - 🇸🇨 SC 05 - ra
 rules:
 - MATCH,PROXIES

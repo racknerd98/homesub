@@ -6,14 +6,28 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - ra"
+        "🇨🇿 CZ 01 - ra",
+        "🇨🇿 CZ 02 - ra",
+        "🇨🇿 CZ 03 - ra",
+        "🇨🇿 CZ 04 - ra",
+        "🇨🇿 CZ 05 - ra",
+        "🇨🇿 CZ 06 - ra",
+        "🇨🇿 CZ 07 - ra",
+        "🇨🇿 CZ 08 - ra"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - ra"
+        "🇨🇿 CZ 01 - ra",
+        "🇨🇿 CZ 02 - ra",
+        "🇨🇿 CZ 03 - ra",
+        "🇨🇿 CZ 04 - ra",
+        "🇨🇿 CZ 05 - ra",
+        "🇨🇿 CZ 06 - ra",
+        "🇨🇿 CZ 07 - ra",
+        "🇨🇿 CZ 08 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

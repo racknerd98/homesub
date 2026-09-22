@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇧🇷 BR 01 - ra",
+        "🇧🇷 BR 02 - ra",
+        "🇧🇷 BR 03 - ra",
+        "🇧🇷 BR 04 - ra",
+        "🇧🇷 BR 05 - ra",
+        "🇧🇷 BR 06 - ra"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇧🇷 BR 01 - ra",
+        "🇧🇷 BR 02 - ra",
+        "🇧🇷 BR 03 - ra",
+        "🇧🇷 BR 04 - ra",
+        "🇧🇷 BR 05 - ra",
+        "🇧🇷 BR 06 - ra"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

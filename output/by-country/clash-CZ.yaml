@@ -6,116 +6,32 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - ra
   type: vless
-  server: cz1.zuoai.cf
+  server: 8.47.69.9
   port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
+  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
   network: ws
   ws-opts:
-    path: /
+    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
     headers:
-      Host: nb.lovecf.ggff.net
+      Host: ancient-heart-60c5.dpccgizieb.workers.dev
 - name: 🇨🇿 CZ 02 - ra
   type: vless
-  server: 195.85.23.88
+  server: 104.21.69.37
   port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
+  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /vl/uWq9DFRgj8BwQiSXmZ46
     headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 03 - ra
-  type: vless
-  server: 66.81.247.155
-  port: 2083
-  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: testmiKOnIM.HyDrYmhmDamyN7.wOrKers.dEv
-  network: ws
-  ws-opts:
-    path: /OAZko425kNFF0PpQ
-    headers:
-      Host: testmikonim.hydrymhmdamyn7.workers.dev
-- name: 🇨🇿 CZ 04 - ra
-  type: vless
-  server: 195.85.23.252
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 05 - ra
-  type: vless
-  server: 195.85.23.219
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 06 - ra
-  type: vless
-  server: 195.85.23.47
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 07 - ra
-  type: vless
-  server: 195.85.23.88
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 08 - ra
-  type: vless
-  server: 195.85.23.29
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
+      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -123,12 +39,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - ra
   - 🇨🇿 CZ 02 - ra
-  - 🇨🇿 CZ 03 - ra
-  - 🇨🇿 CZ 04 - ra
-  - 🇨🇿 CZ 05 - ra
-  - 🇨🇿 CZ 06 - ra
-  - 🇨🇿 CZ 07 - ra
-  - 🇨🇿 CZ 08 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -136,11 +46,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - ra
   - 🇨🇿 CZ 02 - ra
-  - 🇨🇿 CZ 03 - ra
-  - 🇨🇿 CZ 04 - ra
-  - 🇨🇿 CZ 05 - ra
-  - 🇨🇿 CZ 06 - ra
-  - 🇨🇿 CZ 07 - ra
-  - 🇨🇿 CZ 08 - ra
 rules:
 - MATCH,PROXIES

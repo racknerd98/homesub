@@ -7,9 +7,7 @@
       "outbounds": [
         "auto",
         "🇪🇪 EE 01 - ra",
-        "🇪🇪 EE 02 - ra",
-        "🇪🇪 EE 03 - ra",
-        "🇪🇪 EE 04 - ra"
+        "🇪🇪 EE 02 - ra"
       ]
     },
     {
@@ -17,9 +15,7 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 EE 01 - ra",
-        "🇪🇪 EE 02 - ra",
-        "🇪🇪 EE 03 - ra",
-        "🇪🇪 EE 04 - ra"
+        "🇪🇪 EE 02 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

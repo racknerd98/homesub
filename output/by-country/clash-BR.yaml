@@ -15,19 +15,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇧🇷 BR 02 - ra
-  type: vless
-  server: chat.openai.com
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime29.workers.dev
-- name: 🇧🇷 BR 03 - ra
   type: vmess
   server: 172.233.14.17
   port: 22324
@@ -44,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇧🇷 BR 01 - ra
   - 🇧🇷 BR 02 - ra
-  - 🇧🇷 BR 03 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇧🇷 BR 01 - ra
   - 🇧🇷 BR 02 - ra
-  - 🇧🇷 BR 03 - ra
 rules:
 - MATCH,PROXIES

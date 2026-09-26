@@ -6,115 +6,18 @@ log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - ra
   type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  server: 172.66.140.62
+  port: 8880
+  uuid: 160ca353-676d-4b7f-a041-0289e388b865
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proud-cloud-7bdd.208-a52.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 02 - ra
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 03 - ra
-  type: vless
-  server: 43.160.220.86
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mia0.pages.dev
-  network: ws
-  ws-opts:
-    path: /TG:@MiaChatChannel
-    headers:
-      Host: mia0.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 04 - ra
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 05 - ra
-  type: vless
-  server: 43.160.241.174
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mia11.pages.dev
-  network: ws
-  ws-opts:
-    path: /TG:@MiaChatChannel
-    headers:
-      Host: mia11.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 06 - ra
-  type: vless
-  server: 199.34.228.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2fp=chrome
-    headers:
-      Host: speed.dulacloud.store
-- name: 🇸🇬 新加坡 (Singapore) 07 - ra
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 08 - ra
-  type: vless
-  server: 45.12.30.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2fp=chrome
-    headers:
-      Host: speed.dulacloud.store
-- name: 🇸🇬 新加坡 (Singapore) 09 - ra
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 10 - ra
   type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
@@ -124,7 +27,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 11 - ra
+- name: 🇸🇬 新加坡 (Singapore) 03 - ra
   type: vless
   server: 156.224.76.205
   port: 443
@@ -138,157 +41,21 @@ proxies:
     path: /
     headers:
       Host: vp10.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 12 - ra
+- name: 🇸🇬 新加坡 (Singapore) 04 - ra
   type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 13 - ra
-  type: vless
-  server: 63.141.128.22
+  server: 43.160.241.174
   port: 443
-  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+  servername: mia11.pages.dev
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /TG:@MiaChatChannel
     headers:
-      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
-- name: 🇸🇬 新加坡 (Singapore) 14 - ra
-  type: vless
-  server: 139.64.235.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2fp=chrome
-    headers:
-      Host: speed.dulacloud.store
-- name: 🇸🇬 新加坡 (Singapore) 15 - ra
-  type: ss
-  server: 158.178.229.235
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 4nphreJpAUpxvkVQmO2l37kEup8qRu7pcSYU0JbJLVM=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 16 - ra
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 17 - ra
-  type: vless
-  server: 154.198.173.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2fp=chrome
-    headers:
-      Host: speed.dulacloud.store
-- name: 🇸🇬 新加坡 (Singapore) 18 - ra
-  type: vless
-  server: 5.10.215.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2fp=chrome
-    headers:
-      Host: speed.dulacloud.store
-- name: 🇸🇬 新加坡 (Singapore) 19 - ra
-  type: vless
-  server: 104.19.164.155
-  port: 2083
-  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: muddy-math-c1fc.tmpnriqueau89.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 20 - ra
-  type: vless
-  server: 211.48.30.184
-  port: 30017
-  uuid: beec57a5-8266-4279-b279-f495bdc70699
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 21 - ra
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 22 - ra
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 23 - ra
-  type: vless
-  server: 116.251.217.65
-  port: 443
-  uuid: 2388e166-3890-33ae-f77e-efac00000002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: netlivpn4813.ddhshhshs.workers.dev
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 24 - ra
+      Host: mia11.pages.dev
+- name: 🇸🇬 新加坡 (Singapore) 05 - ra
   type: vless
   server: 47.131.189.221
   port: 443
@@ -302,44 +69,19 @@ proxies:
     path: /TG:@MiaChatChannel
     headers:
       Host: mia7.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 25 - ra
+- name: 🇸🇬 新加坡 (Singapore) 06 - ra
   type: vless
-  server: 172.66.214.247
-  port: 8880
-  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: sweet-sun-c70f.317-ba5.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 26 - ra
-  type: vless
-  server: 45.80.108.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2fp=chrome
-    headers:
-      Host: speed.dulacloud.store
-- name: 🇸🇬 新加坡 (Singapore) 27 - ra
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 28 - ra
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 07 - ra
   type: vless
   server: 162.159.156.214
   port: 8880
@@ -352,23 +94,73 @@ proxies:
     path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
       Host: soft-band-8da6.426.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 29 - ra
+- name: 🇸🇬 新加坡 (Singapore) 08 - ra
   type: vless
-  server: 167.68.42.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 09 - ra
+  type: vless
+  server: 172.64.154.8
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 10 - ra
+  type: vless
+  server: 185.193.29.123
+  port: 443
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: speed.dulacloud.store
+  servername: notls.lukongtou.eu.org
   network: ws
   ws-opts:
-    path: /dula?Telegram-WangCai2fp=chrome
+    path: Telegram-WangCai2🇨🇳
     headers:
-      Host: speed.dulacloud.store
-- name: 🇸🇬 新加坡 (Singapore) 30 - ra
+      Host: notls.lukongtou.eu.org
+- name: 🇸🇬 新加坡 (Singapore) 11 - ra
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 12 - ra
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 13 - ra
   type: vmess
-  server: 149.88.23.207
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -376,7 +168,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 31 - ra
+- name: 🇸🇬 新加坡 (Singapore) 14 - ra
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 15 - ra
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -388,131 +190,20 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 32 - ra
+- name: 🇸🇬 新加坡 (Singapore) 16 - ra
   type: vless
-  server: 104.21.50.143
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-5a26a30b00dc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/5a26a30b00dc
-    headers:
-      Host: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 33 - ra
-  type: vless
-  server: 43.160.203.174
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mia0.pages.dev
-  network: ws
-  ws-opts:
-    path: /TG:@MiaChatChannel
-    headers:
-      Host: mia0.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 34 - ra
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  server: 172.64.154.8
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 35 - ra
-  type: vless
-  server: 104.17.3.81
-  port: 443
-  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nautica-cff.kloningstrife002.workers.dev
   network: ws
   ws-opts:
-    path: /138.2.74.219-28616
+    path: /?ed=2560security=tls
     headers:
-      Host: nautica-cff.kloningstrife002.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 36 - ra
-  type: vless
-  server: 89.116.250.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2fp=chrome
-    headers:
-      Host: speed.dulacloud.store
-- name: 🇸🇬 新加坡 (Singapore) 37 - ra
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 38 - ra
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 39 - ra
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 40 - ra
-  type: vless
-  server: 91.193.58.108
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 41 - ra
-  type: vless
-  server: 27.50.49.154
-  port: 2083
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-34l.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-34l.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 42 - ra
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 17 - ra
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -522,11 +213,11 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 43 - ra
+- name: 🇸🇬 新加坡 (Singapore) 18 - ra
   type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 172.64.32.103
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
@@ -534,8 +225,18 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 44 - ra
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 19 - ra
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 20 - ra
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -545,7 +246,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 45 - ra
+- name: 🇸🇬 新加坡 (Singapore) 21 - ra
   type: vless
   server: 149.118.48.187
   port: 443
@@ -559,9 +260,9 @@ proxies:
     path: /TG:@MiaChatChannel
     headers:
       Host: mia4.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 46 - ra
+- name: 🇸🇬 新加坡 (Singapore) 22 - ra
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -569,58 +270,101 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 47 - ra
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 48 - ra
+- name: 🇸🇬 新加坡 (Singapore) 23 - ra
   type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 49 - ra
-  type: vless
-  server: 91.193.58.15
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 50 - ra
-  type: vless
-  server: 172.67.203.158
+  server: 43.160.220.86
   port: 443
-  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+  servername: mia0.pages.dev
   network: ws
   ws-opts:
-    path: /vl/YCNmDFbqMu7cgTzgsfEWGtBD8kR
+    path: /TG:@MiaChatChannel
     headers:
-      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 51 - ra
+      Host: mia0.pages.dev
+- name: 🇸🇬 新加坡 (Singapore) 24 - ra
+  type: vless
+  server: 104.17.3.81
+  port: 443
+  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nautica-cff.kloningstrife002.workers.dev
+  network: ws
+  ws-opts:
+    path: /138.2.74.219-28616
+    headers:
+      Host: nautica-cff.kloningstrife002.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 25 - ra
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 26 - ra
+  type: vless
+  server: 188.114.97.6
+  port: 8880
+  uuid: b19b768d-bc57-4d03-9bea-61129ed5fef9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: new.106-79e.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 27 - ra
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 28 - ra
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 29 - ra
+  type: vless
+  server: 129.150.51.127
+  port: 34249
+  uuid: 0590ab38-cb22-41d3-8312-6f396a5cec58
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.microsoft.com
+- name: 🇸🇬 新加坡 (Singapore) 30 - ra
+  type: vless
+  server: 43.160.203.174
+  port: 443
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mia0.pages.dev
+  network: ws
+  ws-opts:
+    path: /TG:@MiaChatChannel
+    headers:
+      Host: mia0.pages.dev
+- name: 🇸🇬 新加坡 (Singapore) 31 - ra
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -630,20 +374,102 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 52 - ra
+- name: 🇸🇬 新加坡 (Singapore) 32 - ra
   type: vless
-  server: 45.77.241.190
-  port: 8441
-  uuid: 3011e40c-228f-4f2e-9dbf-5b256887e071
+  server: 129.150.51.127
+  port: 49289
+  uuid: 0590ab38-cb22-41d3-8312-6f396a5cec58
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  servername: www.microsoft.com
+- name: 🇸🇬 新加坡 (Singapore) 33 - ra
+  type: vless
+  server: 104.21.69.37
+  port: 443
+  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /vl/uWq9DFRgj8BwQiSXmZ46
     headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 34 - ra
+  type: vless
+  server: 104.18.42.54
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: newwk1.f1w.de5.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newwk1.f1w.de5.net
+- name: 🇸🇬 新加坡 (Singapore) 35 - ra
+  type: vless
+  server: 172.66.214.247
+  port: 8880
+  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: sweet-sun-c70f.317-ba5.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 36 - ra
+  type: vless
+  server: 27.50.49.154
+  port: 2083
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: proxy-34l.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proxy-34l.pages.dev
+- name: 🇸🇬 新加坡 (Singapore) 37 - ra
+  type: vless
+  server: 172.67.137.223
+  port: 443
+  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: curly-night-6928.ggdhchjk.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: curly-night-6928.ggdhchjk.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 38 - ra
+  type: vless
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 39 - ra
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -688,19 +514,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 37 - ra
   - 🇸🇬 新加坡 (Singapore) 38 - ra
   - 🇸🇬 新加坡 (Singapore) 39 - ra
-  - 🇸🇬 新加坡 (Singapore) 40 - ra
-  - 🇸🇬 新加坡 (Singapore) 41 - ra
-  - 🇸🇬 新加坡 (Singapore) 42 - ra
-  - 🇸🇬 新加坡 (Singapore) 43 - ra
-  - 🇸🇬 新加坡 (Singapore) 44 - ra
-  - 🇸🇬 新加坡 (Singapore) 45 - ra
-  - 🇸🇬 新加坡 (Singapore) 46 - ra
-  - 🇸🇬 新加坡 (Singapore) 47 - ra
-  - 🇸🇬 新加坡 (Singapore) 48 - ra
-  - 🇸🇬 新加坡 (Singapore) 49 - ra
-  - 🇸🇬 新加坡 (Singapore) 50 - ra
-  - 🇸🇬 新加坡 (Singapore) 51 - ra
-  - 🇸🇬 新加坡 (Singapore) 52 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -745,18 +558,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 37 - ra
   - 🇸🇬 新加坡 (Singapore) 38 - ra
   - 🇸🇬 新加坡 (Singapore) 39 - ra
-  - 🇸🇬 新加坡 (Singapore) 40 - ra
-  - 🇸🇬 新加坡 (Singapore) 41 - ra
-  - 🇸🇬 新加坡 (Singapore) 42 - ra
-  - 🇸🇬 新加坡 (Singapore) 43 - ra
-  - 🇸🇬 新加坡 (Singapore) 44 - ra
-  - 🇸🇬 新加坡 (Singapore) 45 - ra
-  - 🇸🇬 新加坡 (Singapore) 46 - ra
-  - 🇸🇬 新加坡 (Singapore) 47 - ra
-  - 🇸🇬 新加坡 (Singapore) 48 - ra
-  - 🇸🇬 新加坡 (Singapore) 49 - ra
-  - 🇸🇬 新加坡 (Singapore) 50 - ra
-  - 🇸🇬 新加坡 (Singapore) 51 - ra
-  - 🇸🇬 新加坡 (Singapore) 52 - ra
 rules:
 - MATCH,PROXIES

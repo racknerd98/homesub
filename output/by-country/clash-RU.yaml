@@ -5,84 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - ra
+  type: ss
+  server: 195.133.23.200
+  port: 30210
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - ra
   type: vless
-  server: 46.8.200.91
+  server: 104.21.31.137
   port: 443
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  uuid: 59c70620-d2f3-4255-9d6f-f4c5103d64ce
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
+  servername: 59fssIBE-SDDrRs3qW83QQZz0H1NT-o.q7qwsxItB6BYi5nMTa4naAlz.woRkErs.deV
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /vl/FpYFoMlg8sRpgV7SSaOaRYa3fagqGu?ed
     headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 02 - ra
-  type: vless
-  server: 172.64.42.85
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 03 - ra
-  type: vless
-  server: 172.64.52.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - ra
-  type: vless
-  server: 185.148.104.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 05 - ra
-  type: vless
-  server: 172.64.52.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 06 - ra
-  type: vless
-  server: 104.18.46.234
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: 59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,10 +32,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - ra
   - 🇷🇺 俄罗斯 (Russia) 02 - ra
-  - 🇷🇺 俄罗斯 (Russia) 03 - ra
-  - 🇷🇺 俄罗斯 (Russia) 04 - ra
-  - 🇷🇺 俄罗斯 (Russia) 05 - ra
-  - 🇷🇺 俄罗斯 (Russia) 06 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -101,9 +39,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - ra
   - 🇷🇺 俄罗斯 (Russia) 02 - ra
-  - 🇷🇺 俄罗斯 (Russia) 03 - ra
-  - 🇷🇺 俄罗斯 (Russia) 04 - ra
-  - 🇷🇺 俄罗斯 (Russia) 05 - ra
-  - 🇷🇺 俄罗斯 (Russia) 06 - ra
 rules:
 - MATCH,PROXIES

@@ -5,44 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - ra
-  type: ss
-  server: sth.free-outline.giize.com
-  port: 1081
-  cipher: chacha20-ietf-poly1305
-  password: v7qnj9jvxtnpmj4l
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - ra
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - ra
-  type: vmess
-  server: syj2ggugmwbwqwqx.v.3dns.vip
-  port: 443
-  uuid: f0b7bbd66aad458aaec0e9acaab768b6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: syj2ggugmwbwqwqx.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: syj2ggugmwbwqwqx.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - ra
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -57,28 +19,63 @@ proxies:
     path: ''
     headers:
       Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - ra
+  type: vless
+  server: 179.255.114.109
+  port: 8443
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hk.152568.xyz
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - ra
+  type: vless
+  server: 85.149.211.28
+  port: 8443
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hk.152568.xyz
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - ra
+  type: ss
+  server: 212.192.13.143
+  port: 10090
+  cipher: aes-256-gcm
+  password: 72553320ae6bcc8f
+  udp: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - ra
   type: vmess
-  server: kbondxw9lifci4h4.v.3dns.vip
+  server: 8.218.184.4
   port: 443
-  uuid: f0b7bbd66aad458aaec0e9acaab768b6
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: kbondxw9lifci4h4.v.3dns.vip
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: kbondxw9lifci4h4.v.3dns.vip
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - ra
   type: ss
-  server: sth.free-outline.giize.com
-  port: 1081
-  cipher: chacha20-ietf-poly1305
-  password: ac2jdpwv1zl10jim
+  server: 191.223.214.11
+  port: 8444
+  cipher: aes-128-gcm
+  password: 9436591b-953e-4f69-b1fd-70a8df64fc76
   udp: true
 proxy-groups:
 - name: PROXIES

@@ -5,6 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - ra
+  type: ss
+  server: 45.207.207.25
+  port: 443
+  cipher: aes-256-gcm
+  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
+  udp: true
+- name: 🇸🇨 SC 02 - ra
+  type: vless
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇸🇨 SC 03 - ra
   type: vless
   server: 154.211.8.227
   port: 2087
@@ -24,11 +44,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - ra
+  - 🇸🇨 SC 02 - ra
+  - 🇸🇨 SC 03 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - ra
+  - 🇸🇨 SC 02 - ra
+  - 🇸🇨 SC 03 - ra
 rules:
 - MATCH,PROXIES

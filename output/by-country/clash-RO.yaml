@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱 IL 01 - ra
+- name: 🇷🇴 RO 01 - ra
   type: ss
-  server: 45.146.91.191
-  port: 4
+  server: 154.46.31.106
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: 9qGcNiZj4uCi7DGSjxlg5Q
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇱 IL 01 - ra
+  - 🇷🇴 RO 01 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 IL 01 - ra
+  - 🇷🇴 RO 01 - ra
 rules:
 - MATCH,PROXIES

@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - ra"
+        "🇫🇮 FI 01 - ra",
+        "🇫🇮 FI 02 - ra",
+        "🇫🇮 FI 03 - ra"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - ra"
+        "🇫🇮 FI 01 - ra",
+        "🇫🇮 FI 02 - ra",
+        "🇫🇮 FI 03 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

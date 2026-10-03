@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇬 KG 01 - ra",
+        "🇰🇬 KG 02 - ra",
+        "🇰🇬 KG 03 - ra",
+        "🇰🇬 KG 04 - ra",
+        "🇰🇬 KG 05 - ra",
+        "🇰🇬 KG 06 - ra",
+        "🇰🇬 KG 07 - ra",
+        "🇰🇬 KG 08 - ra",
+        "🇰🇬 KG 09 - ra",
+        "🇰🇬 KG 10 - ra",
+        "🇰🇬 KG 11 - ra",
+        "🇰🇬 KG 12 - ra"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇬 KG 01 - ra",
+        "🇰🇬 KG 02 - ra",
+        "🇰🇬 KG 03 - ra",
+        "🇰🇬 KG 04 - ra",
+        "🇰🇬 KG 05 - ra",
+        "🇰🇬 KG 06 - ra",
+        "🇰🇬 KG 07 - ra",
+        "🇰🇬 KG 08 - ra",
+        "🇰🇬 KG 09 - ra",
+        "🇰🇬 KG 10 - ra",
+        "🇰🇬 KG 11 - ra",
+        "🇰🇬 KG 12 - ra"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

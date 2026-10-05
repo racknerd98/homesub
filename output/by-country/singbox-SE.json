@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇸🇪 SE 01 - ra",
+        "🇸🇪 SE 02 - ra",
+        "🇸🇪 SE 03 - ra",
+        "🇸🇪 SE 04 - ra",
+        "🇸🇪 SE 05 - ra"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇸🇪 SE 01 - ra",
+        "🇸🇪 SE 02 - ra",
+        "🇸🇪 SE 03 - ra",
+        "🇸🇪 SE 04 - ra",
+        "🇸🇪 SE 05 - ra"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

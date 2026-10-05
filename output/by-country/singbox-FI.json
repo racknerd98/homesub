@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇫🇮 FI 01 - ra",
+        "🇫🇮 FI 02 - ra",
+        "🇫🇮 FI 03 - ra",
+        "🇫🇮 FI 04 - ra",
+        "🇫🇮 FI 05 - ra",
+        "🇫🇮 FI 06 - ra"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇫🇮 FI 01 - ra",
+        "🇫🇮 FI 02 - ra",
+        "🇫🇮 FI 03 - ra",
+        "🇫🇮 FI 04 - ra",
+        "🇫🇮 FI 05 - ra",
+        "🇫🇮 FI 06 - ra"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

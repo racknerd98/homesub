@@ -32,25 +32,6 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
-- name: 🇫🇮 FI 04 - ra
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 05 - ra
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,8 +40,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - ra
   - 🇫🇮 FI 02 - ra
   - 🇫🇮 FI 03 - ra
-  - 🇫🇮 FI 04 - ra
-  - 🇫🇮 FI 05 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +48,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - ra
   - 🇫🇮 FI 02 - ra
   - 🇫🇮 FI 03 - ra
-  - 🇫🇮 FI 04 - ra
-  - 🇫🇮 FI 05 - ra
 rules:
 - MATCH,PROXIES

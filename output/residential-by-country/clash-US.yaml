@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 RO 01 - ra
+- name: 🇺🇸 美国 (United States) 01 (家宽) - ra
   type: vless
-  server: 46.183.16.4
-  port: 2087
-  uuid: 69d76969-4c52-40f5-ac1d-303571634362
+  server: 104.21.88.129
+  port: 8880
+  uuid: 70c16ec7-13f7-473b-b97d-06399f1481e3
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ro1.b0w.ir
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: 46.183.16.4
+      Host: mute-surf-0003.209.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 RO 01 - ra
+  - 🇺🇸 美国 (United States) 01 (家宽) - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 RO 01 - ra
+  - 🇺🇸 美国 (United States) 01 (家宽) - ra
 rules:
 - MATCH,PROXIES

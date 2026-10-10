@@ -15,50 +15,16 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇭 TH 02 - ra
-  type: ss
-  server: 103.107.52.106
-  port: 52351
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇹🇭 TH 03 - ra
-  type: ss
-  server: pphfree2.mvpnpvpn.de5.net
-  port: 52351
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
-  udp: true
-- name: 🇹🇭 TH 04 - ra
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 05 - ra
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 06 - ra
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 07 - ra
   type: vmess
   server: 119.46.51.45
   port: 37515
@@ -76,10 +42,6 @@ proxy-groups:
   - 🇹🇭 TH 01 - ra
   - 🇹🇭 TH 02 - ra
   - 🇹🇭 TH 03 - ra
-  - 🇹🇭 TH 04 - ra
-  - 🇹🇭 TH 05 - ra
-  - 🇹🇭 TH 06 - ra
-  - 🇹🇭 TH 07 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -88,9 +50,5 @@ proxy-groups:
   - 🇹🇭 TH 01 - ra
   - 🇹🇭 TH 02 - ra
   - 🇹🇭 TH 03 - ra
-  - 🇹🇭 TH 04 - ra
-  - 🇹🇭 TH 05 - ra
-  - 🇹🇭 TH 06 - ra
-  - 🇹🇭 TH 07 - ra
 rules:
 - MATCH,PROXIES

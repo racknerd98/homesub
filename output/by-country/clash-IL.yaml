@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - ra
+- name: 🇮🇱 IL 01 - ra
   type: vless
-  server: 104.21.88.129
-  port: 8880
-  uuid: 70c16ec7-13f7-473b-b97d-06399f1481e3
+  server: 185.253.75.119
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /
     headers:
-      Host: mute-surf-0003.209.workers.dev
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - ra
+  - 🇮🇱 IL 01 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - ra
+  - 🇮🇱 IL 01 - ra
 rules:
 - MATCH,PROXIES

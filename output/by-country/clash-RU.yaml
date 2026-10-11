@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - ra
   type: vless
+  server: spb.ai-boost.tech
+  port: 443
+  uuid: e2599b64-2eaa-4b81-b2bc-738605ecfeec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: spb.ai-boost.tech
+  network: ws
+  ws-opts:
+    path: /bKGK1ZI0PzpQz3OeEeq1
+    headers:
+      Host: spb.ai-boost.tech
+- name: 🇷🇺 俄罗斯 (Russia) 02 - ra
+  type: vless
   server: 79.174.92.222
   port: 443
   uuid: 03ca8c3f-e777-45b5-a1b1-592094ca99ee
@@ -16,55 +30,20 @@ proxies:
     public-key: _PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI
   servername: m.vk.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02 - ra
-  type: vless
-  server: 104.21.12.63
-  port: 8443
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.arcane509.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 03 - ra
   type: vless
-  server: 172.67.214.25
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  server: 172.67.130.187
+  port: 2083
+  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
+  servername: fans.liverpool.qzz.io
   network: ws
   ws-opts:
-    path: /
+    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: index.arcane509.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 04 - ra
-  type: vless
-  server: 172.67.170.140
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 05 - ra
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
-  udp: true
+      Host: fans.liverpool.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,8 +52,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - ra
   - 🇷🇺 俄罗斯 (Russia) 02 - ra
   - 🇷🇺 俄罗斯 (Russia) 03 - ra
-  - 🇷🇺 俄罗斯 (Russia) 04 - ra
-  - 🇷🇺 俄罗斯 (Russia) 05 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,7 +60,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - ra
   - 🇷🇺 俄罗斯 (Russia) 02 - ra
   - 🇷🇺 俄罗斯 (Russia) 03 - ra
-  - 🇷🇺 俄罗斯 (Russia) 04 - ra
-  - 🇷🇺 俄罗斯 (Russia) 05 - ra
 rules:
 - MATCH,PROXIES

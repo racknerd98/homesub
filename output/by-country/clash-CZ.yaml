@@ -6,29 +6,76 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - ra
   type: vless
-  server: 172.67.145.21
-  port: 443
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  server: 172.66.47.45
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
+  servername: wk1.f1w.de5.net
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: index.arcane509.workers.dev
+      Host: wk1.f1w.de5.net
+- name: 🇨🇿 CZ 02 - ra
+  type: vless
+  server: 104.19.1.115
+  port: 443
+  uuid: e285fb9b-ce0a-45ea-84da-4ad64cacd216
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: apP-874a55-219AFC.rEigNsskY2.WORKerS.dev
+  network: ws
+  ws-opts:
+    path: /vl/dOH03263y00uTucKhyn?ed
+    headers:
+      Host: app-874a55-219afc.reignssky2.workers.dev
+- name: 🇨🇿 CZ 03 - ra
+  type: vless
+  server: 104.16.107.139
+  port: 8880
+  uuid: 24c2a873-4584-4c53-8679-61029682d0bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: soft-thunder-bc22.111-f59.workers.dev
+- name: 🇨🇿 CZ 04 - ra
+  type: vless
+  server: 104.21.13.229
+  port: 443
+  uuid: 5f11c240-89df-494c-9c81-8b619023bb58
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 789156.xyz
+  network: ws
+  ws-opts:
+    path: /?ed=2048fp=randomized
+    headers:
+      Host: 789156.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - ra
+  - 🇨🇿 CZ 02 - ra
+  - 🇨🇿 CZ 03 - ra
+  - 🇨🇿 CZ 04 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - ra
+  - 🇨🇿 CZ 02 - ra
+  - 🇨🇿 CZ 03 - ra
+  - 🇨🇿 CZ 04 - ra
 rules:
 - MATCH,PROXIES

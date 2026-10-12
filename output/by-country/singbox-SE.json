@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE 01 - ra"
+        "🇸🇪 SE 01 - ra",
+        "🇸🇪 SE 02 - ra",
+        "🇸🇪 SE 03 - ra"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE 01 - ra"
+        "🇸🇪 SE 01 - ra",
+        "🇸🇪 SE 02 - ra",
+        "🇸🇪 SE 03 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

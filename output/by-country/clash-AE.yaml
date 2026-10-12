@@ -19,30 +19,32 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - ra
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 83.147.216.223
+  port: 4433
+  uuid: 660174a2-d32d-4521-840d-d1853bfc80b8
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /@Marisa_kristi
     headers:
-      Host: uae.unixzone.us
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 03 - ra
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 31.57.190.49
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /
+    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
     headers:
-      Host: uae.unixzone.us
+      Host: lucasjow.us.ci
 - name: 🇦🇪 阿联酋 (UAE) 04 - ra
   type: vless
   server: 147.78.0.186
@@ -54,7 +56,7 @@ proxies:
   servername: free.cndyw.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: pyip=bpb.yousef.isegaro.comfp=chrome
     headers:
       Host: free.cndyw.ggff.net
 - name: 🇦🇪 阿联酋 (UAE) 05 - ra
@@ -85,6 +87,20 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 07 - ra
   type: vless
+  server: 5.75.195.83
+  port: 56879
+  uuid: f8847ac2-e586-400f-841b-00081ea4592e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 08 - ra
+  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -108,6 +124,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - ra
   - 🇦🇪 阿联酋 (UAE) 06 - ra
   - 🇦🇪 阿联酋 (UAE) 07 - ra
+  - 🇦🇪 阿联酋 (UAE) 08 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -120,5 +137,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - ra
   - 🇦🇪 阿联酋 (UAE) 06 - ra
   - 🇦🇪 阿联酋 (UAE) 07 - ra
+  - 🇦🇪 阿联酋 (UAE) 08 - ra
 rules:
 - MATCH,PROXIES

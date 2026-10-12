@@ -7,8 +7,7 @@
       "outbounds": [
         "auto",
         "🇮🇪 IE 01 - ra",
-        "🇮🇪 IE 02 - ra",
-        "🇮🇪 IE 03 - ra"
+        "🇮🇪 IE 02 - ra"
       ]
     },
     {
@@ -16,8 +15,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇪 IE 01 - ra",
-        "🇮🇪 IE 02 - ra",
-        "🇮🇪 IE 03 - ra"
+        "🇮🇪 IE 02 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

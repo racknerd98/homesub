@@ -7,7 +7,11 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI 01 - ra",
-        "🇫🇮 FI 02 - ra"
+        "🇫🇮 FI 02 - ra",
+        "🇫🇮 FI 03 - ra",
+        "🇫🇮 FI 04 - ra",
+        "🇫🇮 FI 05 - ra",
+        "🇫🇮 FI 06 - ra"
       ]
     },
     {
@@ -15,7 +19,11 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI 01 - ra",
-        "🇫🇮 FI 02 - ra"
+        "🇫🇮 FI 02 - ra",
+        "🇫🇮 FI 03 - ra",
+        "🇫🇮 FI 04 - ra",
+        "🇫🇮 FI 05 - ra",
+        "🇫🇮 FI 06 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -25,6 +25,19 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
+- name: 🇨🇭 CH 03 - ra
+  type: vless
+  server: 172.64.88.168
+  port: 8880
+  uuid: 6f876b28-1b3e-4088-85c0-d299e56bfccd
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: throbbing-haze-fbde.388-6c4.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +45,7 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - ra
   - 🇨🇭 CH 02 - ra
+  - 🇨🇭 CH 03 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +53,6 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - ra
   - 🇨🇭 CH 02 - ra
+  - 🇨🇭 CH 03 - ra
 rules:
 - MATCH,PROXIES

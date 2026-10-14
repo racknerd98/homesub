@@ -5,18 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - ra
-  type: vless
-  server: 185.162.229.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  type: vmess
+  server: 188.121.120.86
+  port: 42143
+  uuid: 874a6b6d-d569-4b64-b9a6-32d594e61325
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime61.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

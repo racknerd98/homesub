@@ -6,16 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - ra",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ra"
+        "🇰🇿 KZ 01 - ra",
+        "🇰🇿 KZ 02 - ra",
+        "🇰🇿 KZ 03 - ra",
+        "🇰🇿 KZ 04 - ra",
+        "🇰🇿 KZ 05 - ra"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - ra",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ra"
+        "🇰🇿 KZ 01 - ra",
+        "🇰🇿 KZ 02 - ra",
+        "🇰🇿 KZ 03 - ra",
+        "🇰🇿 KZ 04 - ra",
+        "🇰🇿 KZ 05 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

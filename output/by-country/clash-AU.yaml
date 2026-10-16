@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - ra
   type: vless
-  server: 104.18.155.229
-  port: 443
-  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
+  server: 192.0.54.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: www.genflix.co.id.r3xxe.eu.cc
   network: ws
   ws-opts:
-    path: /au-do
+    path: /
     headers:
-      Host: www.genflix.co.id.r3xxe.eu.cc
+      Host: vms.lifetime35.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

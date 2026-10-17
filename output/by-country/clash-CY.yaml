@@ -25,6 +25,61 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇾 CY 03 - ra
+  type: vless
+  server: 5.253.29.254
+  port: 14430
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
+- name: 🇨🇾 CY 04 - ra
+  type: vless
+  server: 5.253.29.254
+  port: 10443
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇾 CY 05 - ra
+  type: vless
+  server: 5.253.29.254
+  port: 14430
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
+- name: 🇨🇾 CY 06 - ra
+  type: vless
+  server: 5.253.29.254
+  port: 14430
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
+- name: 🇨🇾 CY 07 - ra
+  type: vless
+  server: 5.253.29.254
+  port: 10443
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +87,11 @@ proxy-groups:
   - AUTO
   - 🇨🇾 CY 01 - ra
   - 🇨🇾 CY 02 - ra
+  - 🇨🇾 CY 03 - ra
+  - 🇨🇾 CY 04 - ra
+  - 🇨🇾 CY 05 - ra
+  - 🇨🇾 CY 06 - ra
+  - 🇨🇾 CY 07 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +99,10 @@ proxy-groups:
   proxies:
   - 🇨🇾 CY 01 - ra
   - 🇨🇾 CY 02 - ra
+  - 🇨🇾 CY 03 - ra
+  - 🇨🇾 CY 04 - ra
+  - 🇨🇾 CY 05 - ra
+  - 🇨🇾 CY 06 - ra
+  - 🇨🇾 CY 07 - ra
 rules:
 - MATCH,PROXIES

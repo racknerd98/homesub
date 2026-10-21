@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇾 BY 01 - ra
+- name: 🇮🇷 IR 01 - ra
   type: vless
-  server: 178.172.227.228
-  port: 14430
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  server: irnamh.g44mozgh.ir
+  port: 2035
+  uuid: 65c91ab7-a503-4b73-9f8e-e1c0b6377dc2
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.228
+  reality-opts:
+    public-key: tjlpmcWwDiXnVu2Wc8v8wxwmiYWtnoUNeHmXPtL5vyk
+  servername: play.google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇾 BY 01 - ra
+  - 🇮🇷 IR 01 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇾 BY 01 - ra
+  - 🇮🇷 IR 01 - ra
 rules:
 - MATCH,PROXIES

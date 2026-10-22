@@ -6,6 +6,33 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - ra
   type: vless
+  server: 89.22.224.146
+  port: 43788
+  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇸🇪 SE 02 - ra
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 03 - ra
+  type: vless
   server: 77.110.97.245
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -18,7 +45,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇸🇪 SE 02 - ra
+- name: 🇸🇪 SE 04 - ra
   type: vless
   server: 94.143.231.146
   port: 443
@@ -32,7 +59,7 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 03 - ra
+- name: 🇸🇪 SE 05 - ra
   type: vless
   server: 94.143.231.146
   port: 443
@@ -54,6 +81,8 @@ proxy-groups:
   - 🇸🇪 SE 01 - ra
   - 🇸🇪 SE 02 - ra
   - 🇸🇪 SE 03 - ra
+  - 🇸🇪 SE 04 - ra
+  - 🇸🇪 SE 05 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +91,7 @@ proxy-groups:
   - 🇸🇪 SE 01 - ra
   - 🇸🇪 SE 02 - ra
   - 🇸🇪 SE 03 - ra
+  - 🇸🇪 SE 04 - ra
+  - 🇸🇪 SE 05 - ra
 rules:
 - MATCH,PROXIES

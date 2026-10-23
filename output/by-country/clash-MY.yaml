@@ -1,0 +1,49 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇲🇾 MY 01 - ra
+  type: vless
+  server: forwarded.frnhk.xyz
+  port: 46003
+  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /my1023
+    headers:
+      Host: forwarded.frnhk.xyz
+- name: 🇲🇾 MY 02 - ra
+  type: vless
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇲🇾 MY 01 - ra
+  - 🇲🇾 MY 02 - ra
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇾 MY 01 - ra
+  - 🇲🇾 MY 02 - ra
+rules:
+- MATCH,PROXIES

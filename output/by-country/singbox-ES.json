@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - ra"
+        "🇪🇸 西班牙 (Spain) 01 - ra",
+        "🇪🇸 西班牙 (Spain) 02 - ra",
+        "🇪🇸 西班牙 (Spain) 03 - ra",
+        "🇪🇸 西班牙 (Spain) 04 - ra"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - ra"
+        "🇪🇸 西班牙 (Spain) 01 - ra",
+        "🇪🇸 西班牙 (Spain) 02 - ra",
+        "🇪🇸 西班牙 (Spain) 03 - ra",
+        "🇪🇸 西班牙 (Spain) 04 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

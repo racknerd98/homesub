@@ -43,7 +43,14 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 04 - ra
+  type: ss
+  server: location8.cpanel-host10.ir
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +59,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - ra
   - 🇹🇷 土耳其 (Turkey) 02 - ra
   - 🇹🇷 土耳其 (Turkey) 03 - ra
+  - 🇹🇷 土耳其 (Turkey) 04 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +68,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - ra
   - 🇹🇷 土耳其 (Turkey) 02 - ra
   - 🇹🇷 土耳其 (Turkey) 03 - ra
+  - 🇹🇷 土耳其 (Turkey) 04 - ra
 rules:
 - MATCH,PROXIES

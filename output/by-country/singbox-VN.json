@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 VN 01 - ra",
-        "🇻🇳 VN 02 - ra"
+        "🇻🇳 VN 01 - ra"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 VN 01 - ra",
-        "🇻🇳 VN 02 - ra"
+        "🇻🇳 VN 01 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

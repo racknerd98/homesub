@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇵🇭 PH 01 - ra",
-        "🇵🇭 PH 02 - ra"
+        "🇵🇭 PH 02 - ra",
+        "🇵🇭 PH 03 - ra",
+        "🇵🇭 PH 04 - ra"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇭 PH 01 - ra",
-        "🇵🇭 PH 02 - ra"
+        "🇵🇭 PH 02 - ra",
+        "🇵🇭 PH 03 - ra",
+        "🇵🇭 PH 04 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

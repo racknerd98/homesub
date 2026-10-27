@@ -7,7 +7,10 @@
       "outbounds": [
         "auto",
         "🇲🇽 MX 01 - ra",
-        "🇲🇽 MX 02 - ra"
+        "🇲🇽 MX 02 - ra",
+        "🇲🇽 MX 03 - ra",
+        "🇲🇽 MX 04 - ra",
+        "🇲🇽 MX 05 - ra"
       ]
     },
     {
@@ -15,7 +18,10 @@
       "tag": "auto",
       "outbounds": [
         "🇲🇽 MX 01 - ra",
-        "🇲🇽 MX 02 - ra"
+        "🇲🇽 MX 02 - ra",
+        "🇲🇽 MX 03 - ra",
+        "🇲🇽 MX 04 - ra",
+        "🇲🇽 MX 05 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

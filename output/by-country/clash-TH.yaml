@@ -5,13 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - ra
-  type: ss
-  server: pphfree1.mvpnpvpn.de5.net
-  port: 52351
-  cipher: aes-256-gcm
-  password: prDjNd1ILAuMYRhgRL+xcBWXcfH9d89ogZTxayqomLA=
+  type: vless
+  server: 38.60.254.50
+  port: 22222
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: th001.zestapp778.com
 - name: 🇹🇭 TH 02 - ra
+  type: vless
+  server: th001.zestapp778.com
+  port: 22222
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: th001.zestapp778.com
+- name: 🇹🇭 TH 03 - ra
   type: vless
   server: 104.16.10.185
   port: 443
@@ -25,7 +36,7 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 03 - ra
+- name: 🇹🇭 TH 04 - ra
   type: vless
   server: 104.16.10.9
   port: 443
@@ -39,41 +50,59 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 04 - ra
+- name: 🇹🇭 TH 05 - ra
   type: vless
-  server: 104.18.26.90
-  port: 443
+  server: 103.86.49.57
+  port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
+- name: 🇹🇭 TH 06 - ra
+  type: vless
+  server: 38.60.254.50
+  port: 22222
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: v2ray.simspeedup.com
+  servername: th001.zestapp778.com
+- name: 🇹🇭 TH 07 - ra
+  type: vless
+  server: th001.zestapp778.com
+  port: 22222
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: th001.zestapp778.com
+- name: 🇹🇭 TH 08 - ra
+  type: vless
+  server: 38.60.254.50
+  port: 22222
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: th001.zestapp778.com
+- name: 🇹🇭 TH 09 - ra
+  type: vless
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 05 - ra
-  type: ss
-  server: 103.107.52.106
-  port: 52351
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
-  udp: true
-- name: 🇹🇭 TH 06 - ra
-  type: ss
-  server: pphfree2.mvpnpvpn.de5.net
-  port: 52351
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
-  udp: true
-- name: 🇹🇭 TH 07 - ra
-  type: ss
-  server: pphfree2.mvpnpvpn.de5.net
-  port: 52351
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,6 +115,8 @@ proxy-groups:
   - 🇹🇭 TH 05 - ra
   - 🇹🇭 TH 06 - ra
   - 🇹🇭 TH 07 - ra
+  - 🇹🇭 TH 08 - ra
+  - 🇹🇭 TH 09 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -98,5 +129,7 @@ proxy-groups:
   - 🇹🇭 TH 05 - ra
   - 🇹🇭 TH 06 - ra
   - 🇹🇭 TH 07 - ra
+  - 🇹🇭 TH 08 - ra
+  - 🇹🇭 TH 09 - ra
 rules:
 - MATCH,PROXIES

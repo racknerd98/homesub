@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - ra
   type: vless
-  server: edge10.cyrionflare.com
+  server: 178.83.45.226
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
@@ -14,19 +14,20 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 RO 02 - ra
   type: vless
-  server: 155.117.5.208
+  server: edge10.cyrionflare.com
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 03 - ra
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇷🇴 RO 04 - ra
   type: vless
   server: edge10.cyrionflare.com
@@ -36,21 +37,12 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 05 - ra
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  type: ss
+  server: 154.46.31.106
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 06 - ra
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,7 +53,6 @@ proxy-groups:
   - 🇷🇴 RO 03 - ra
   - 🇷🇴 RO 04 - ra
   - 🇷🇴 RO 05 - ra
-  - 🇷🇴 RO 06 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,6 +63,5 @@ proxy-groups:
   - 🇷🇴 RO 03 - ra
   - 🇷🇴 RO 04 - ra
   - 🇷🇴 RO 05 - ra
-  - 🇷🇴 RO 06 - ra
 rules:
 - MATCH,PROXIES

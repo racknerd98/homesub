@@ -75,7 +75,47 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 06 - ra
   type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 07 - ra
+  type: vless
   server: 65.109.210.221
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 08 - ra
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 09 - ra
+  type: vless
+  server: hw3.divarkhaghazi.com.
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
@@ -98,6 +138,9 @@ proxy-groups:
   - 🇫🇮 FI 04 - ra
   - 🇫🇮 FI 05 - ra
   - 🇫🇮 FI 06 - ra
+  - 🇫🇮 FI 07 - ra
+  - 🇫🇮 FI 08 - ra
+  - 🇫🇮 FI 09 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -109,5 +152,8 @@ proxy-groups:
   - 🇫🇮 FI 04 - ra
   - 🇫🇮 FI 05 - ra
   - 🇫🇮 FI 06 - ra
+  - 🇫🇮 FI 07 - ra
+  - 🇫🇮 FI 08 - ra
+  - 🇫🇮 FI 09 - ra
 rules:
 - MATCH,PROXIES

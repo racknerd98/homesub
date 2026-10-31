@@ -15,23 +15,31 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 02 - ra
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 CH 03 - ra
   type: vless
-  server: 149.33.15.213
-  port: 443
-  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: swz.proxyplankton.ru
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 03 - ra
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇨🇭 CH 04 - ra
   type: vless
   server: 208.69.78.217
@@ -46,25 +54,25 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇭 CH 05 - ra
   type: vless
-  server: 129.153.71.28
-  port: 28863
-  uuid: 3e956106-7f92-4cbf-bf77-715d3890fa84
+  server: 149.33.15.213
+  port: 443
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  servername: swz.proxyplankton.ru
 - name: 🇨🇭 CH 06 - ra
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇨🇭 CH 07 - ra
   type: vless
   server: 208.69.78.217
@@ -79,42 +87,13 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇭 CH 08 - ra
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇨🇭 CH 09 - ra
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇨🇭 CH 10 - ra
-  type: vless
-  server: 185.18.250.252
+  server: 149.33.15.213
   port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /nl-tw
-    headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
+  servername: swz.proxyplankton.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -128,8 +107,6 @@ proxy-groups:
   - 🇨🇭 CH 06 - ra
   - 🇨🇭 CH 07 - ra
   - 🇨🇭 CH 08 - ra
-  - 🇨🇭 CH 09 - ra
-  - 🇨🇭 CH 10 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -143,7 +120,5 @@ proxy-groups:
   - 🇨🇭 CH 06 - ra
   - 🇨🇭 CH 07 - ra
   - 🇨🇭 CH 08 - ra
-  - 🇨🇭 CH 09 - ra
-  - 🇨🇭 CH 10 - ra
 rules:
 - MATCH,PROXIES

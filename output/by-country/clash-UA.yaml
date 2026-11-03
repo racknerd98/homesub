@@ -4,29 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 EE 01 - ra
+- name: 🇺🇦 UA 01 - ra
   type: vless
-  server: 79.182.39.232
-  port: 25895
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  server: 31.222.235.81
+  port: 443
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-  servername: www.samsung.com
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 EE 01 - ra
+  - 🇺🇦 UA 01 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 EE 01 - ra
+  - 🇺🇦 UA 01 - ra
 rules:
 - MATCH,PROXIES

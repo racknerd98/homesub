@@ -5,73 +5,137 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - ra
-  type: vmess
-  server: 185.177.229.95
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 02 - ra
   type: vless
-  server: 146.103.118.189
-  port: 443
-  uuid: 82382a00-3784-41e3-85d6-37f626263944
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vpn.574ck.xyz
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vpn.574ck.xyz
-- name: 🇩🇪 德国 (Germany) 03 - ra
-  type: vless
-  server: 172.66.47.56
-  port: 443
-  uuid: 3dc83518-4002-485e-a066-d3bbcaaa2b2e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: K9-85J.paGEs.Dev
-  network: ws
-  ws-opts:
-    path: /1WWzkWgNslKTcceU?ed=2560
-    headers:
-      Host: k9-85j.pages.dev
-- name: 🇩🇪 德国 (Germany) 04 - ra
-  type: vless
-  server: hw5.roghanmo.com
-  port: 465
-  uuid: a356fa77-7199-417a-80dd-0c0925789161
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw5.roghanmo.com.
+  servername: sino.bestsellers1.site
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: hw5.roghanmo.com
-- name: 🇩🇪 德国 (Germany) 05 - ra
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 03 - ra
+  type: ss
+  server: 23.157.88.43
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 04 - ra
   type: vless
-  server: 146.103.118.189
+  server: 104.25.51.43
   port: 443
-  uuid: 82382a00-3784-41e3-85d6-37f626263944
+  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vpn.574ck.xyz
+  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
   network: ws
   ws-opts:
-    path: /ws
+    path: /dbb0764aca00c946?ed=2560
     headers:
-      Host: vpn.574ck.xyz
+      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
+- name: 🇩🇪 德国 (Germany) 05 - ra
+  type: vless
+  server: 190.93.245.239
+  port: 443
+  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
+  network: ws
+  ws-opts:
+    path: /dbb0764aca00c946?ed=2560
+    headers:
+      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
 - name: 🇩🇪 德国 (Germany) 06 - ra
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
+    headers:
+      Host: fornewiran.ade-1000.workers.dev
+- name: 🇩🇪 德国 (Germany) 07 - ra
+  type: vless
+  server: 167.172.165.106
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edge.yzkvm.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.yzkvm.top
+- name: 🇩🇪 德国 (Germany) 08 - ra
+  type: ss
+  server: 193.108.119.2
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 09 - ra
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 10 - ra
+  type: vless
+  server: 91.107.188.129
+  port: 2083
+  uuid: bd6c11e0-0233-4fb1-ba97-8d5f16d7155f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: Site.check-looks.space
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.188.129
+- name: 🇩🇪 德国 (Germany) 11 - ra
+  type: vless
+  server: 104.18.133.94
+  port: 443
+  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
+  network: ws
+  ws-opts:
+    path: /dbb0764aca00c946?ed=2560
+    headers:
+      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
+- name: 🇩🇪 德国 (Germany) 12 - ra
   type: vless
   server: 57.129.41.216
   port: 80
@@ -84,141 +148,124 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 07 - ra
-  type: vmess
-  server: 2.26.54.200
-  port: 8018
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /websocket/transfer/gayporn
-    headers:
-      Host: None
-- name: 🇩🇪 德国 (Germany) 08 - ra
+- name: 🇩🇪 德国 (Germany) 13 - ra
   type: vless
-  server: 91.107.243.131
-  port: 465
-  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
+  server: 172.66.44.124
+  port: 8443
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw14.roghanmo.com
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: hw14.roghanmo.com
-- name: 🇩🇪 德国 (Germany) 09 - ra
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: 🇩🇪 德国 (Germany) 14 - ra
+  type: vless
+  server: 141.101.121.61
+  port: 443
+  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
+  network: ws
+  ws-opts:
+    path: /dbb0764aca00c946?ed=2560
+    headers:
+      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
+- name: 🇩🇪 德国 (Germany) 15 - ra
+  type: vless
+  server: 104.27.197.129
+  port: 443
+  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
+  network: ws
+  ws-opts:
+    path: /dbb0764aca00c946?ed=2560
+    headers:
+      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
+- name: 🇩🇪 德国 (Germany) 16 - ra
+  type: vless
+  server: 172.67.116.212
+  port: 443
+  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
+  network: ws
+  ws-opts:
+    path: /dbb0764aca00c946?ed=2560
+    headers:
+      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
+- name: 🇩🇪 德国 (Germany) 17 - ra
+  type: ss
+  server: 193.108.119.3
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 18 - ra
+  type: vless
+  server: 172.67.170.148
+  port: 443
+  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
+  network: ws
+  ws-opts:
+    path: /dbb0764aca00c946?ed=2560
+    headers:
+      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
+- name: 🇩🇪 德国 (Germany) 19 - ra
   type: ss
   server: 185.176.204.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 10 - ra
+- name: 🇩🇪 德国 (Germany) 20 - ra
+  type: vless
+  server: 46.101.253.244
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edge.yzkvm.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.yzkvm.top
+- name: 🇩🇪 德国 (Germany) 21 - ra
   type: ss
-  server: 185.226.172.8
-  port: 8008
+  server: 57.129.83.85
+  port: 19999
   cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 11 - ra
-  type: vmess
-  server: 2.26.54.200
-  port: 8018
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /websocket/transfer/gayporn
-    headers:
-      Host: shit.67133767.xyz
-- name: 🇩🇪 德国 (Germany) 12 - ra
+- name: 🇩🇪 德国 (Germany) 22 - ra
   type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇩🇪 德国 (Germany) 13 - ra
-  type: vmess
-  server: 2.26.99.150
-  port: 8018
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /websocket/transfer/gayporn
-    headers:
-      Host: shit.67133767.xyz
-- name: 🇩🇪 德国 (Germany) 14 - ra
-  type: vless
-  server: 91.107.244.35
-  port: 465
-  uuid: a356fa77-7199-417a-80dd-0c0925789161
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw5.roghanmo.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.244.35
-- name: 🇩🇪 德国 (Germany) 15 - ra
-  type: vless
-  server: 57.129.41.216
+  server: 104.27.88.172
   port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  uuid: 50414e45-4c5f-5a45-5553-52108a2d5224
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless/
+    path: /api/ws
     headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 16 - ra
-  type: vless
-  server: 91.107.244.35
-  port: 465
-  uuid: a356fa77-7199-417a-80dd-0c0925789161
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw5.roghanmo.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.244.35
-- name: 🇩🇪 德国 (Germany) 17 - ra
-  type: ss
-  server: 213.202.208.199
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
+      Host: web-app-nr6wpa.app-tp57xz.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -241,6 +288,11 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 15 - ra
   - 🇩🇪 德国 (Germany) 16 - ra
   - 🇩🇪 德国 (Germany) 17 - ra
+  - 🇩🇪 德国 (Germany) 18 - ra
+  - 🇩🇪 德国 (Germany) 19 - ra
+  - 🇩🇪 德国 (Germany) 20 - ra
+  - 🇩🇪 德国 (Germany) 21 - ra
+  - 🇩🇪 德国 (Germany) 22 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -263,5 +315,10 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 15 - ra
   - 🇩🇪 德国 (Germany) 16 - ra
   - 🇩🇪 德国 (Germany) 17 - ra
+  - 🇩🇪 德国 (Germany) 18 - ra
+  - 🇩🇪 德国 (Germany) 19 - ra
+  - 🇩🇪 德国 (Germany) 20 - ra
+  - 🇩🇪 德国 (Germany) 21 - ra
+  - 🇩🇪 德国 (Germany) 22 - ra
 rules:
 - MATCH,PROXIES

@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 BG 01 - ra
+- name: 🇱🇹 LT 01 - ra
   type: vless
-  server: 172.66.44.200
-  port: 443
-  uuid: 3dc83518-4002-485e-a066-d3bbcaaa2b2e
+  server: 89.117.112.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: K9-85J.paGEs.Dev
   network: ws
   ws-opts:
-    path: /1WWzkWgNslKTcceU?ed=2560
+    path: /
     headers:
-      Host: k9-85j.pages.dev
+      Host: vms.lifetime11.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 BG 01 - ra
+  - 🇱🇹 LT 01 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 BG 01 - ra
+  - 🇱🇹 LT 01 - ra
 rules:
 - MATCH,PROXIES

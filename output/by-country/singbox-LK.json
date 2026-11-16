@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - ra"
+        "🇱🇰 LK 01 - ra",
+        "🇱🇰 LK 02 - ra",
+        "🇱🇰 LK 03 - ra"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - ra"
+        "🇱🇰 LK 01 - ra",
+        "🇱🇰 LK 02 - ra",
+        "🇱🇰 LK 03 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

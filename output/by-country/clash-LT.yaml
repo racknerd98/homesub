@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 BG 01 - ra
+- name: 🇱🇹 LT 01 - ra
   type: vless
-  server: 185.197.193.137
+  server: 84.32.83.197
   port: 443
-  uuid: 313b84fa-b922-500f-9b65-acb67c040cc0
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: us2.v2less.site
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: us2.v2less.site
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: api-dns-gw.galioncc.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 BG 01 - ra
+  - 🇱🇹 LT 01 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 BG 01 - ra
+  - 🇱🇹 LT 01 - ra
 rules:
 - MATCH,PROXIES

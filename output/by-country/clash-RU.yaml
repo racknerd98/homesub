@@ -6,25 +6,22 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - ra
   type: vless
-  server: 193.233.219.98
+  server: 136.148.83.69
   port: 443
-  uuid: 265ecca2-4733-49de-b2c9-ed7f0e999655
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: daily-author.ru
-  network: ws
-  ws-opts:
-    path: /api/vless
-    headers:
-      Host: vpn-rating.space
+  servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 02 - ra
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 03 - ra
   type: vless
   server: 147.45.175.81
@@ -39,6 +36,24 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
+- name: 🇷🇺 俄罗斯 (Russia) 04 - ra
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 05 - ra
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +62,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - ra
   - 🇷🇺 俄罗斯 (Russia) 02 - ra
   - 🇷🇺 俄罗斯 (Russia) 03 - ra
+  - 🇷🇺 俄罗斯 (Russia) 04 - ra
+  - 🇷🇺 俄罗斯 (Russia) 05 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,5 +72,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - ra
   - 🇷🇺 俄罗斯 (Russia) 02 - ra
   - 🇷🇺 俄罗斯 (Russia) 03 - ra
+  - 🇷🇺 俄罗斯 (Russia) 04 - ra
+  - 🇷🇺 俄罗斯 (Russia) 05 - ra
 rules:
 - MATCH,PROXIES

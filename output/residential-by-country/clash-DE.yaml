@@ -17,7 +17,7 @@ proxies:
   ws-opts:
     path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560
     headers:
-      Host: 1v5vp5jsq611a5dsm.pages.dev
+      Host: 1v5Vp5jsQ611A5dsm.PAges.dEV
 proxy-groups:
 - name: PROXIES
   type: select

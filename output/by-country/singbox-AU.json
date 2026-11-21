@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 UA 01 - ra"
+        "🇦🇺 澳大利亚 (Australia) 01 - ra",
+        "🇦🇺 澳大利亚 (Australia) 02 - ra"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 UA 01 - ra"
+        "🇦🇺 澳大利亚 (Australia) 01 - ra",
+        "🇦🇺 澳大利亚 (Australia) 02 - ra"
       ],
       "url": "https://www.google.com/generate_204"
     },

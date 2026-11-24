@@ -6,15 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - ra
   type: vless
-  server: 168.113.253.178
-  port: 443
-  uuid: 608172ed-68e4-0001-85dc-f92c25d0eb92
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
-- name: 🇷🇺 俄罗斯 (Russia) 02 - ra
-  type: vless
   server: 136.148.83.69
   port: 443
   uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
@@ -22,32 +13,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 03 - ra
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 04 - ra
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 05 - ra
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - ra
+- name: 🇷🇺 俄罗斯 (Russia) 02 - ra
   type: vless
   server: 147.45.175.81
   port: 443
@@ -58,32 +24,59 @@ proxies:
   servername: xsru2.freeddns.org
   network: ws
   ws-opts:
-    path: /wsru
+    path: wsru
     headers:
       Host: xsru2.freeddns.org
+- name: 🇷🇺 俄罗斯 (Russia) 03 - ra
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 04 - ra
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - ra
+  type: vless
+  server: 136.148.83.71
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wccfu-ru-79dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 06 - ra
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 07 - ra
   type: vless
-  server: 168.113.253.178
+  server: 136.148.83.69
   port: 443
-  uuid: aea0ed55-4e5e-0001-a4fe-5d626d914a9f
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
+  servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 08 - ra
-  type: vless
-  server: 147.45.221.225
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  type: ss
+  server: 48.103.218.77
+  port: 18443
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nl.lucheeebezlimitnoekino.stream
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: 147.45.221.225
 - name: 🇷🇺 俄罗斯 (Russia) 09 - ra
   type: vless
   server: 136.148.83.69
@@ -93,22 +86,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 10 - ra
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 11 - ra
-  type: ss
-  server: 48.103.218.77
-  port: 18443
-  cipher: aes-256-gcm
-  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -123,8 +100,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - ra
   - 🇷🇺 俄罗斯 (Russia) 08 - ra
   - 🇷🇺 俄罗斯 (Russia) 09 - ra
-  - 🇷🇺 俄罗斯 (Russia) 10 - ra
-  - 🇷🇺 俄罗斯 (Russia) 11 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -139,7 +114,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - ra
   - 🇷🇺 俄罗斯 (Russia) 08 - ra
   - 🇷🇺 俄罗斯 (Russia) 09 - ra
-  - 🇷🇺 俄罗斯 (Russia) 10 - ra
-  - 🇷🇺 俄罗斯 (Russia) 11 - ra
 rules:
 - MATCH,PROXIES

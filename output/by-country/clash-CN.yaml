@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - ra
-  type: vless
-  server: 87.82.59.60
-  port: 837
-  uuid: d8b42cd5-b149-4356-9e61-444444444444
+- name: 🇨🇳 CN 01 - ra
+  type: ss
+  server: 103.238.140.162
+  port: 10002
+  cipher: 2022-blake3-aes-128-gcm
+  password: qryl6xVLkWXZlqD7CccpQw==
   udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - ra
+  - 🇨🇳 CN 01 - ra
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - ra
+  - 🇨🇳 CN 01 - ra
 rules:
 - MATCH,PROXIES
